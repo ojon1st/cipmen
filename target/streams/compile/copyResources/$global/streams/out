@@ -1,0 +1,6 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/brabo/IdeaProjects/cipmen/conf/routes,/home/brabo/IdeaProjects/cipmen/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/brabo/IdeaProjects/cipmen/conf/META-INF,/home/brabo/IdeaProjects/cipmen/target/scala-2.11/classes/META-INF)[0m
+[0m[[0mdebug[0m] [0m	(/home/brabo/IdeaProjects/cipmen/conf/application.conf,/home/brabo/IdeaProjects/cipmen/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/brabo/IdeaProjects/cipmen/conf/logback.xml,/home/brabo/IdeaProjects/cipmen/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/brabo/IdeaProjects/cipmen/conf/META-INF/persistence.xml,/home/brabo/IdeaProjects/cipmen/target/scala-2.11/classes/META-INF/persistence.xml)[0m

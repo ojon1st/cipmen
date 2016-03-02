@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>CIPMEN | Home</title>
+
+            <!--SEO Meta Tags-->
+        <meta name="description" content="CIPMEN - Incubateur" />
+        <meta name="keywords" content="CIPMEN - CENTRE D'INCUBATION POUR LES PMES DU NIGER - L'entrepreunariat innovant et durable"/>
+        <meta name="author" content="Cipmen" />
+
+            <!--Mobile Specific Meta Tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+            <!--Favicon-->
+        <link rel="shortcut icon" href="@routes.Assets.versioned("favicon.ico")" type="image/x-icon">
+        <link rel="icon" href="@routes.Assets.versioned("favicon.ico")" type="image/x-icon">
+
+            <!-- All Theme Styles including Bootstrap, Bourbon, Pixeden, etc. compiled from styles.scss-->
+        <link href="@routes.Assets.versioned("css/styles.min.css")" rel="stylesheet" media="screen">
+        <link href="@routes.Assets.versioned("css/colors/color.css")" rel="stylesheet" media="screen">
+
+            <!--Modernizr / Detectizr-->
+        <script src="@routes.Assets.versioned("js/vendor/modernizr.custom.js")"></script>
+
+            <!-- Page Preloader (Pace) -->
+        <script src="@routes.Assets.versioned("js/vendor/pace.min.js")"></script>
+    </head>
+
+        <!-- Body -->
+        <!-- ".is-preloader" class is used for page preloading animation. Please note if you do not want preloading you need to remove this class along with pace.min.js link in the <head> of the document.-->
+        <!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
+    <body class="is-preloader parallax">
+
+            <!-- Page Wrapper -->
+        <div class="page-wrapper">
+
+                <!-- Navbar -->
+                <!-- Remove ".navbar-fixed" class to make navigation bar scrollable with the page. Another modifier calss is ".submenu-dark" to alter submenu appearance. -->
+            <header class="navbar navbar-fixed">
+                <div class="container">
+                    <div class="inner">
+
+                            <!-- Site Logo -->
+                        <a href="/" class="site-logo">
+                            <img src="@routes.Assets.versioned("img/logo.png")" alt="CIPMEN">
+                        </a><!-- .site-logo -->
+
+                        <!-- Mobile Dropdown -->
+                        <div class="mobile-dropdown">
+
+                                <!-- Mobile Tools -->
+                            <div class="mobile-tools">
+                                <div class="social-bar text-center">
+                                    <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
+                                    <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
+                                </div><!-- .social-bar -->
+                            </div><!-- .mobile-tools -->
+
+                            <!-- Main Navigation -->
+                            <nav class="main-navigation">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="/incubateur">L'incubateur</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Les incubés<span>&#8211;</span></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="/startup/one">One</a></li>
+                                            <li><a href="/startup/novateck">Novateck</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/postule">Je postule</a>
+                                    </li>
+                                    <li>
+                                        <a href="/evenements">Evènement</a>
+                                    </li>
+                                    <li>
+                                        <a href="/blogs">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="/mediatheques">Mediathèque</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contacts">Contact</a>
+                                    </li>
+                                </ul><!-- .menu -->
+                            </nav><!-- .main-navigation -->
+                        </div><!-- .mobile-dropdown -->
+
+                        <!-- Toolbar -->
+                        <div class="toolbar">
+                            <span class="divider"></span>
+                            <div class="share-btn">
+                                <i class="pe-7s-share"></i>
+                                <ul class="dropdown">
+                                    <li><a href="#" class="sb-facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                    <li><a href="#" class="sb-twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                </ul>
+                            </div>
+                            <a href="/inscription" class="btn btn-sm btn-info btn-ghost btn-icon-left scroll-to" data-offset-top="115">
+                                <i class="pe-7s-download"></i>Page perso
+                            </a>
+                                <!-- Mobile Menu Toggle -->
+                            <div class="nav-toggle"><span></span></div>
+                        </div><!-- .toolbar -->
+                    </div><!-- .inner -->
+                </div><!-- .container -->
+            </header><!-- .navbar.navbar-fixed -->
+
+    <!-- Intro Section -->
+    <section class="intro-section padding-bottom-2x" style="background-image: url(@routes.Assets.versioned("img/home/intro/2.jpg"));" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity: .85;"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 padding-bottom-3x mobile-center">
+                    <h2 class="text-light">Hack'4 dev</h2>
+                    <div class="video-popup-placeholder">
+                        <img src="@routes.Assets.versioned("img/home/intro/1.jpg")" alt="Video">
+                        <a href="https://vimeo.com/33984473" class="play-btn"></a>
+                    </div><!-- .video-popup-placeholder -->
+                    <p class="text-light opacity-50 hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <div class="mobile-center">
+                    </div>
+                </div><!-- .col-lg-5. col-lg-offset-1 -->
+
+                <!-- Features -->
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-cloud-upload"></i>
+                        </div>
+                        <div class="box-with-icon-content">
+                            <h3 class="box-with-icon-title">Accompagnement business</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-micro"></i>
+                        </div>
+                        <div class="box-with-icon-content">
+                            <h3 class="box-with-icon-title">Développement international</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-config"></i>
+                        </div>
+                        <div class="box-with-icon-content">
+                            <h3 class="box-with-icon-title">Evénements</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-comment"></i>
+                        </div>
+                        <div class="box-with-icon-content">
+                            <h3 class="box-with-icon-title">Chat In Your App</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                </div><!-- .col-lg-5. col-lg-offset-1 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .intro-section -->
+
+    <!-- Features -->
+    <section class="fw-section bg-white border-top padding-top-3x padding-bottom-3x">
+        <div class="container">
+            <h2 class="block-title text-center">Nos offres
+                <small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</small>
+            </h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-cloud-upload"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Accompagnement business</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-micro"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Développement international</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-config"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Financement</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+            </div><!-- .row -->
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-credit"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Evénements</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-comment"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Hébergement</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-icon text-center">
+                        <div class="box-with-icon-icon">
+                            <i class="pe-7s-date"></i>
+                        </div>
+                        <h3 class="box-with-icon-title">Coatching</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div><!-- .box-with-icon -->
+                </div><!-- .col-sm-4 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section>
+
+    <!-- Video Popup -->
+    <section class="fw-section parallax text-center padding-top-3x padding-bottom-3x" style="background-image: url(@routes.Assets.versioned("img/home/video-bg.jpg"));" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity: .78;"></span>
+        <div class="container padding-top-3x padding-bottom-3x">
+            <!-- Remove ".light-skin" class to alter appearance. -->
+            <a href="https://vimeo.com/33984473" class="video-popup-btn light-skin space-top-3x space-bottom">
+                <i class="pe-7s-film"></i>
+            </a>
+            <p class="text-lg text-light space-bottom-2x">Vidéo de présentation</p>
+        </div><!-- .container -->
+    </section><!-- .fw-section -->
+
+    <!-- Testimonials Carousel -->
+    <!-- Data API:
+      data-loop="true/false" enable/disable looping
+      data-autoplay="true/false" enable/disable carousel autoplay
+      data-interval="3000" autoplay interval timeout in miliseconds 
+      Simply add necessary data attribute to the ".testimonials-carousel" with appropriate value to adjust carousel functionality.
+     -->
+    <section class="container padding-top-3x padding-bottom-3x">
+        <h2 class="block-title text-center">Témoignages</h2>
+        <div class="testimonials-carousel" data-loop="true">
+            <div class="inner">
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/01.jpg")" alt="Jessie Pinkman">
+                    </div>
+                    <h3 class="testimonial-author-name">Bob marley</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <img src="@routes.Assets.versioned("img/testimonials/logo01.png")" alt="MailChimp">
+                </div><!-- .testimonial -->
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/02.jpg")" alt="Lara Goodwill">
+                    </div>
+                    <h3 class="testimonial-author-name">Damian Marley</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <img src="@routes.Assets.versioned("img/testimonials/logo02.png")" alt="WordPress">
+                </div><!-- .testimonial -->
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/03.jpg")" alt="Mike Johnson">
+                    </div>
+                    <h3 class="testimonial-author-name">Michael Jackson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    <img src="@routes.Assets.versioned("img/testimonials/logo03.png")" alt="Bootstrap">
+                </div><!-- .testimonial -->
+            </div><!-- .inner -->
+        </div><!-- .testimonials-carousel -->
+    </section><!-- .container.padding-bottom-3x -->
+
+
+    <!-- Team -->
+    <section class="fw-section bg-white padding-top-3x padding-bottom-3x">
+        <div class="container">
+            <h2 class="block-title text-center">
+                Notre équipe
+                <small>Jeune et dynamique</small>
+            </h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/01.jpg")" alt="Johnathan Doe">
+                        </div>
+                        <h3 class="box-with-image-title">Moctac
+                            <small>CEO</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/02.jpg")" alt="Anabelle Dorris">
+                        </div>
+                        <h3 class="box-with-image-title">Bambino
+                            <small>Business developper</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/03.jpg")" alt="Taylor White">
+                        </div>
+                        <h3 class="box-with-image-title">Maliyaro
+                            <small>UX / UI Engeneer</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+            </div><!-- .row -->
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/04.jpg")" alt="Suasanna Davis">
+                        </div>
+                        <h3 class="box-with-image-title">Brelote Ba
+                            <small>Marketing Director</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/05.jpg")" alt="Christopher Walker">
+                        </div>
+                        <h3 class="box-with-image-title">Housseini
+                            <small>Chauffeur</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+                <div class="col-sm-4">
+                    <!-- Use ".light-skin" class to alter appearance. -->
+                    <div class="box-with-image text-center">
+                        <div class="box-with-image-image">
+                            <img src="@routes.Assets.versioned("img/team/06.jpg")" alt="Endy Garcia">
+                        </div>
+                        <h3 class="box-with-image-title">Emilie la joie
+                            <small>Java Developer</small>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <div class="social-bar text-center">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                            <a href="#" class="sb-instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div><!-- .box-with-image -->
+                </div><!-- .col-sm-4 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </section><!-- .fw-section.bg-white -->
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+        <i class="icon-arrow-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <!-- Use modifier class ".footer-dark" to switch to dark skin. -->
+    <footer class="footer space-top-3x">
+        <div class="container">
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="inner">
+                    <div class="column">
+                        <span class="copy-text">&copy; 2016. Tous droits réservés</span>
+                    </div><!-- .column -->
+                    <div class="column">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="/mediatheques">Mediathèque</a></li>
+                                <li><a href="/postule">Porteurs de projet</a></li>
+                                <li><a href="/contacts">Contacts</a></li>
+                            </ul>
+                        </nav><!-- .footer-nav -->
+                    </div><!-- .column -->
+                    <div class="column">
+                        <div class="social-bar">
+                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </div><!-- .social-bar -->
+                    </div><!-- .column -->
+                </div><!-- .inner -->
+            </div><!-- .copyright -->
+        </div><!-- .container -->
+    </footer><!-- .footer --></div><!-- .page-wrapper -->
+
+<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+<script src="@routes.Assets.versioned("js/vendor/jquery-2.1.4.min.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/bootstrap.min.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/placeholder.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/smoothscroll.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/jquery.stellar.min.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/velocity.min.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/magnific-popup.min.js")"></script>
+<script src="@routes.Assets.versioned("js/vendor/owl.carousel.min.js")"></script>
+<script src="@routes.Assets.versioned("js/scripts.js")"></script>
+
+</body><!-- <body> -->
+
+</html>
