@@ -1,5 +1,7 @@
 package controllers;
 
+import models.Evenement;
+import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.evenement;
@@ -10,11 +12,13 @@ import views.html.evenements;
  */
 public class Evenements extends Controller {
 
+    @Transactional
     public Result reads() {
-        return ok(evenements.render());
+        return ok(evenements.render(new Evenement().findList()));
     }
 
-    public Result read(String nom) {
-        return ok(evenement.render());
+    @Transactional
+    public Result read(String lien) {
+        return ok(evenement.render(new Evenement().findByLien(lien)));
     }
 }

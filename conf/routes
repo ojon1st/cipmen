@@ -3,10 +3,17 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-GET        /inscription            controllers.Application.inscription()
+GET         /                    controllers.Application.index()
+GET         /inscription         controllers.Application.inscription()
+POST        /inscription         controllers.Application.create()
+
 GET        /connexion              controllers.Application.connexion()
+POST        /connexion             controllers.Application.authentification()
+
 GET        /deconnexion            controllers.Application.deconnexion()
+
+# Newsletter
+POST       /newsletter              controllers.Newsletters.create()
 
 # Profils
 GET        /profil                 controllers.Profils.reads()
@@ -14,11 +21,11 @@ GET        /profil                 controllers.Profils.reads()
 
 # Blog
 GET        /blogs                  controllers.Blogs.reads()
-GET        /blogs/:nom             controllers.Blogs.read(nom: String)
+GET        /blogs/:lien             controllers.Blogs.read(lien: String)
 
 # Evenement
 GET        /evenements             controllers.Evenements.reads()
-GET        /evenements/:nom        controllers.Evenements.read(nom: String)
+GET        /evenements/:lien        controllers.Evenements.read(lien: String)
 
 # Startup
 GET        /startup                controllers.Startups.reads()
@@ -32,10 +39,11 @@ GET        /mediatheques           controllers.Mediatheques.reads()
 
 # Postule
 GET        /postule                controllers.Postules.reads()
+POST       /postule                controllers.Postules.create()
 
 # Contact
 GET        /contacts               controllers.Contacts.reads()
-
+POST       /contacts                controllers.Contacts.create()
 
 
 

@@ -1,5 +1,7 @@
 package controllers;
 
+import models.Mediatheque;
+import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.mediatheques;
@@ -9,7 +11,8 @@ import views.html.mediatheques;
  */
 public class Mediatheques extends Controller {
 
+    @Transactional
     public Result reads() {
-        return ok(mediatheques.render());
+        return ok(mediatheques.render(new Mediatheque().findList()));
     }
 }

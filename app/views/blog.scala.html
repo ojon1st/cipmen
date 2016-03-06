@@ -1,215 +1,32 @@
-<!DOCTYPE html>
-<html>
+@(blog : Blog)
 
-    <head>
-        <meta charset="utf-8">
-        <title>CIPMEN | Blog</title>
-
-            <!--SEO Meta Tags-->
-        <meta name="description" content="CIPMEN - Home" />
-        <meta name="keywords" content="CIPMEN - CENTRE D'INCUBATION POUR LES PMES DU NIGER - L'entrepreunariat innovant et durable"/>
-        <meta name="author" content="Cipmen" />
-
-            <!--Mobile Specific Meta Tag-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-            <!--Favicon-->
-        <link rel="shortcut icon" href="@routes.Assets.versioned("favicon.ico")" type="image/x-icon">
-        <link rel="icon" href="@routes.Assets.versioned("favicon.ico")" type="image/x-icon">
-
-            <!-- All Theme Styles including Bootstrap, Bourbon, Pixeden, etc. compiled from styles.scss-->
-        <link href="@routes.Assets.versioned("css/styles.min.css")" rel="stylesheet" media="screen">
-        <link href="@routes.Assets.versioned("css/colors/color.css")" rel="stylesheet" media="screen">
-
-            <!--Modernizr / Detectizr-->
-        <script src="@routes.Assets.versioned("js/vendor/modernizr.custom.js")"></script>
-
-            <!-- Page Preloader (Pace) -->
-        <script src="@routes.Assets.versioned("js/vendor/pace.min.js")"></script>
-    </head>
-
-        <!-- Body -->
-        <!-- ".is-preloader" class is used for page preloading animation. Please note if you do not want preloading you need to remove this class along with pace.min.js link in the <head> of the document.-->
-        <!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
-    <body class="is-preloader parallax">
-
-            <!-- Page Wrapper -->
-        <div class="page-wrapper">
-
-                <!-- Navbar -->
-                <!-- Remove ".navbar-fixed" class to make navigation bar scrollable with the page. Another modifier calss is ".submenu-dark" to alter submenu appearance. -->
-            <header class="navbar navbar-fixed">
-                <div class="container">
-                    <div class="inner">
-
-                            <!-- Site Logo -->
-                        <a href="/" class="site-logo">
-                            <img src="@routes.Assets.versioned("img/logo.png")" alt="CIPMEN">
-                        </a><!-- .site-logo -->
-
-                        <!-- Mobile Dropdown -->
-                        <div class="mobile-dropdown">
-
-                                <!-- Mobile Tools -->
-                            <div class="mobile-tools">
-                                <div class="social-bar text-center">
-                                    <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
-                                </div><!-- .social-bar -->
-                            </div><!-- .mobile-tools -->
-
-                            <!-- Main Navigation -->
-                            <nav class="main-navigation">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="/incubateur">L'incubateur</a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Les incubés<span>&#8211;</span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/startup/one">One</a></li>
-                                            <li><a href="/startup/novateck">Novateck</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/postule">Je postule</a>
-                                    </li>
-                                    <li>
-                                        <a href="/evenements">Evènement</a>
-                                    </li>
-                                    <li>
-                                        <a href="/blogs">Blogs</a>
-                                    </li>
-                                    <li>
-                                        <a href="/mediatheques">Mediathèque</a>
-                                    </li>
-                                    <li>
-                                        <a href="/contacts">Contact</a>
-                                    </li>
-                                </ul><!-- .menu -->
-                            </nav><!-- .main-navigation -->
-                        </div><!-- .mobile-dropdown -->
-
-                        <!-- Toolbar -->
-                        <div class="toolbar">
-                            <span class="divider"></span>
-                            <div class="share-btn">
-                                <i class="pe-7s-share"></i>
-                                <ul class="dropdown">
-                                    <li><a href="#" class="sb-facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                    <li><a href="#" class="sb-twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                </ul>
-                            </div>
-                            <a href="/inscription" class="btn btn-sm btn-info btn-ghost btn-icon-left scroll-to" data-offset-top="115">
-                                <i class="pe-7s-download"></i>Page perso
-                            </a>
-                                <!-- Mobile Menu Toggle -->
-                            <div class="nav-toggle"><span></span></div>
-                        </div><!-- .toolbar -->
-                    </div><!-- .inner -->
-                </div><!-- .container -->
-            </header><!-- .navbar.navbar-fixed -->
-
-    <!-- Page Title -->
-    <!-- Use modifier class ".pt-dark" to switch to dark skin. "pt-parallax" to enable css parallax effect. -->
-    <div class="page-title pt-dark" style="background-image: url(@routes.Assets.versioned("img/page-title/single-post.jpg");" data-stellar-background-ratio="0.65">
-        <span class="overlay ie-gradient" style="opacity: .85;"></span>
+@main("Blog"){
+    <div class="page-title pt-dark pt-parallax" style="background-image: url(@routes.Assets.versioned("img/home/header.jpg"));" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity: .25;"></span>
         <div class="container">
             <div class="inner">
                 <div class="title">
-                    <h1>Blog</h1>
-                </div><!-- .title -->
-                <div class="breadcrumbs">
-                    <a href="/">Accueil</a>
-                    <span>Blog</span>
-                </div><!-- .breadcrumbs -->
-            </div><!-- .inner -->
-        </div><!-- .container -->
-    </div><!-- .page-title -->
+                    <h2 class="text-light"><strong>Blog</strong></h2>
+                </div>
 
-    <!-- Content -->
-    <div class="content-no-sidebar padding-bottom">
-        <h3>Titre blog 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-
-        <!-- Image Carousel -->
-        <!-- Data API:
-          data-loop="true/false" enable/disable looping
-          data-autoplay="true/false" enable/disable carousel autoplay
-          data-interval="3000" autoplay interval timeout in miliseconds
-          data-autoheight="true/false" enable/disable autoheight with transition
-          data-dots="true/false" enable/disable bullet navigation
-          Simply add necessary data attribute to the ".image-carousel" with appropriate value to adjust carousel functionality.
-          Add ".light-controls" class to change skin of carousel controls to light version. e.x. for dark images.
-         -->
-        <div class="image-carousel space-top-2x space-bottom" data-dots="true">
-            <div class="inner">
-                <img src="@routes.Assets.versioned("img/blog/carousel/01.jpg")" alt="Image">
-                <img src="@routes.Assets.versioned("img/blog/carousel/02.jpg")" alt="Image">
-                <img src="@routes.Assets.versioned("img/blog/carousel/03.jpg")" alt="Image">
             </div>
-        </div><!-- .image-carousel -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi.</p>
-        <blockquote>
-            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-            <cite>James Cameron</cite>
-        </blockquote>
-        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        <div class="embed-responsive embed-responsive-16by9 space-top-2x space-bottom-2x">
-            <iframe src="https://player.vimeo.com/video/33984473?color=ff3366&amp;title=0&amp;byline=0&amp;portrait=0" class="embed-responsive-item"></iframe>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-    </div><!-- .content-no-sidebar -->
+    </div>
 
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-        <i class="icon-arrow-up"></i>
-    </a><!-- .scroll-to-top-btn -->
+    <div class="content-no-sidebar padding-bottom">
+        <h3>@blog.getTitre</h3>
+        <p>@blog.getShortDescription</p>
 
-    <!-- Footer -->
-    <!-- Use modifier class ".footer-dark" to switch to dark skin. -->
-    <footer class="footer space-top-3x">
-        <div class="container">
-            <!-- Copyright -->
-            <div class="copyright">
-                <div class="inner">
-                    <div class="column">
-                        <span class="copy-text">&copy; 2016. Tous droits réservés</span>
-                    </div><!-- .column -->
-                    <div class="column">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="/mediatheques">Mediathèque</a></li>
-                                <li><a href="/postule">Porteurs de projet</a></li>
-                                <li><a href="/contacts">Contacts</a></li>
-                            </ul>
-                        </nav><!-- .footer-nav -->
-                    </div><!-- .column -->
-                    <div class="column">
-                        <div class="social-bar">
-                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        </div><!-- .social-bar -->
-                    </div><!-- .column -->
-                </div><!-- .inner -->
-            </div><!-- .copyright -->
-        </div><!-- .container -->
-    </footer><!-- .footer --></div><!-- .page-wrapper -->
-
-
-<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-    <script src="@routes.Assets.versioned("js/vendor/jquery-2.1.4.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/bootstrap.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/placeholder.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/smoothscroll.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/jquery.stellar.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/velocity.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/magnific-popup.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/vendor/owl.carousel.min.js")"></script>
-    <script src="@routes.Assets.versioned("js/scripts.js")"></script>
-
-</body><!-- <body> -->
-
-</html>
+        <div class="image-carousel space-top-2x space-bottom light-controls" data-dots="true" data-autoplay="true" data-interval="3000" >
+            <div class="inner">
+                <img src="@routes.Assets.versioned("img/blogs/"+blog.getImageOne+".jpg")" alt="Image">
+                <img src="@routes.Assets.versioned("img/blogs/"+blog.getImageTwo+".jpg")" alt="Image">
+                <img src="@routes.Assets.versioned("img/blogs/"+blog.getImageTree+".jpg")" alt="Image">
+            </div>
+        </div>
+        <p>@Html(blog.getLongDescription)</p>
+        <div class="embed-responsive embed-responsive-16by9 space-top-2x space-bottom-2x">
+            <iframe src="https://www.youtube.com/embed/@blog.getVideo" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+        </div>
+    </div>
+}

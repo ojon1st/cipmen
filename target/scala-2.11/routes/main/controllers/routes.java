@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/brabo/IdeaProjects/cipmen/conf/routes
-// @DATE:Wed Mar 02 01:12:29 WAT 2016
+// @DATE:Sun Mar 06 00:49:10 WAT 2016
 
 package controllers;
 
@@ -11,6 +11,7 @@ public class routes {
   
   public static final controllers.ReverseAssets Assets = new controllers.ReverseAssets(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseProfils Profils = new controllers.ReverseProfils(RoutesPrefix.byNamePrefix());
+  public static final controllers.ReverseNewsletters Newsletters = new controllers.ReverseNewsletters(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseApplication Application = new controllers.ReverseApplication(RoutesPrefix.byNamePrefix());
   public static final controllers.ReversePostules Postules = new controllers.ReversePostules(RoutesPrefix.byNamePrefix());
   public static final controllers.ReverseStartups Startups = new controllers.ReverseStartups(RoutesPrefix.byNamePrefix());
@@ -24,6 +25,7 @@ public class routes {
     
     public static final controllers.javascript.ReverseAssets Assets = new controllers.javascript.ReverseAssets(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseProfils Profils = new controllers.javascript.ReverseProfils(RoutesPrefix.byNamePrefix());
+    public static final controllers.javascript.ReverseNewsletters Newsletters = new controllers.javascript.ReverseNewsletters(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseApplication Application = new controllers.javascript.ReverseApplication(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReversePostules Postules = new controllers.javascript.ReversePostules(RoutesPrefix.byNamePrefix());
     public static final controllers.javascript.ReverseStartups Startups = new controllers.javascript.ReverseStartups(RoutesPrefix.byNamePrefix());

@@ -1,5 +1,7 @@
 package controllers;
 
+import models.Blog;
+import play.db.jpa.Transactional;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.blog;
@@ -10,11 +12,13 @@ import views.html.blogs;
  */
 public class Blogs extends Controller {
 
+    @Transactional
     public Result reads() {
-        return ok(blogs.render());
+        return ok(blogs.render(new Blog().findList()));
     }
 
-    public Result read(String nom) {
-        return ok(blog.render());
+    @Transactional
+    public Result read(String lien) {
+        return ok(blog.render(new Blog().findByLien(lien)));
     }
 }

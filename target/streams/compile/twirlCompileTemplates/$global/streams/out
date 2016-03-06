@@ -1,4 +1,0 @@
-[0m[[31merror[0m] [0m/home/brabo/IdeaProjects/cipmen/app/views/mediatheques.scala.html:263: Expected ')' but found 'EOF'[0m
-[0m[[31merror[0m] [0m</html>[0m
-[0m[[31merror[0m] [0m       ^[0m
-[0m[[31merror[0m] [0m(compile:[31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

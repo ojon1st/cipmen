@@ -1,0 +1,43 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>CIPMEN | @title</title>
+
+        <meta name="description" content="CIPMEN - Home" />
+        <meta name="keywords" content="CIPMEN - CENTRE D'INCUBATION POUR LES PMES DU NIGER - L'entrepreunariat innovant et durable"/>
+        <meta name="author" content="Cipmen" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="shortcut icon" href="@routes.Assets.versioned("favicon.ico")" type="image/x-icon">
+
+        <link href="@routes.Assets.versioned("css/styles.min.css")" rel="stylesheet" media="screen">
+        <link href="@routes.Assets.versioned("css/colors/color.css")" rel="stylesheet" media="screen">
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5DLwPPVAz88_k0yO2nmFe7T9k1urQs84"></script>
+        <script src="@routes.Assets.versioned("js/vendor/modernizr.custom.js")"></script>
+        <script src="@routes.Assets.versioned("js/vendor/pace.min.js")"></script>
+
+    </head>
+
+    <body class="is-preloader parallax">
+        <div class="page-wrapper">
+            @header()
+
+            @content
+
+            <a href="#" class="scroll-to-top-btn">
+                <i class="icon-arrow-up"></i>
+            </a>
+
+            @footer()
+
+            @scripts()
+
+        </div>
+    </body>
+</html>

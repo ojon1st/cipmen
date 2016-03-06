@@ -29,303 +29,198 @@ class incubateur extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
       {
 
 
-Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="utf-8">
-        <title>CIPMEN | Home</title>
-
-            <!--SEO Meta Tags-->
-        <meta name="description" content="CIPMEN - Incubateur" />
-        <meta name="keywords" content="CIPMEN - CENTRE D'INCUBATION POUR LES PMES DU NIGER - L'entrepreunariat innovant et durable"/>
-        <meta name="author" content="Cipmen" />
-
-            <!--Mobile Specific Meta Tag-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-            <!--Favicon-->
-        <link rel="shortcut icon" href=""""),_display_(/*17.42*/routes/*17.48*/.Assets.versioned("favicon.ico")),format.raw/*17.80*/("""" type="image/x-icon">
-        <link rel="icon" href=""""),_display_(/*18.33*/routes/*18.39*/.Assets.versioned("favicon.ico")),format.raw/*18.71*/("""" type="image/x-icon">
-
-            <!-- All Theme Styles including Bootstrap, Bourbon, Pixeden, etc. compiled from styles.scss-->
-        <link href=""""),_display_(/*21.22*/routes/*21.28*/.Assets.versioned("css/styles.min.css")),format.raw/*21.67*/("""" rel="stylesheet" media="screen">
-        <link href=""""),_display_(/*22.22*/routes/*22.28*/.Assets.versioned("css/colors/color.css")),format.raw/*22.69*/("""" rel="stylesheet" media="screen">
-
-            <!--Modernizr / Detectizr-->
-        <script src=""""),_display_(/*25.23*/routes/*25.29*/.Assets.versioned("js/vendor/modernizr.custom.js")),format.raw/*25.79*/(""""></script>
-
-            <!-- Page Preloader (Pace) -->
-        <script src=""""),_display_(/*28.23*/routes/*28.29*/.Assets.versioned("js/vendor/pace.min.js")),format.raw/*28.71*/(""""></script>
-    </head>
-
-        <!-- Body -->
-        <!-- ".is-preloader" class is used for page preloading animation. Please note if you do not want preloading you need to remove this class along with pace.min.js link in the <head> of the document.-->
-        <!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
-    <body class="is-preloader parallax">
-
-            <!-- Page Wrapper -->
-        <div class="page-wrapper">
-
-                <!-- Navbar -->
-                <!-- Remove ".navbar-fixed" class to make navigation bar scrollable with the page. Another modifier calss is ".submenu-dark" to alter submenu appearance. -->
-            <header class="navbar navbar-fixed">
-                <div class="container">
-                    <div class="inner">
-
-                            <!-- Site Logo -->
-                        <a href="/" class="site-logo">
-                            <img src=""""),_display_(/*47.40*/routes/*47.46*/.Assets.versioned("img/logo.png")),format.raw/*47.79*/("""" alt="CIPMEN">
-                        </a><!-- .site-logo -->
-
-                        <!-- Mobile Dropdown -->
-                        <div class="mobile-dropdown">
-
-                                <!-- Mobile Tools -->
-                            <div class="mobile-tools">
-                                <div class="social-bar text-center">
-                                    <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
-                                </div><!-- .social-bar -->
-                            </div><!-- .mobile-tools -->
-
-                            <!-- Main Navigation -->
-                            <nav class="main-navigation">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="/incubateur">L'incubateur</a>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Les incubés<span>&#8211;</span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="/startup/one">One</a></li>
-                                            <li><a href="/startup/novateck">Novateck</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="/postule">Je postule</a>
-                                    </li>
-                                    <li>
-                                        <a href="/evenements">Evènement</a>
-                                    </li>
-                                    <li>
-                                        <a href="/blogs">Blogs</a>
-                                    </li>
-                                    <li>
-                                        <a href="/mediatheques">Mediathèque</a>
-                                    </li>
-                                    <li>
-                                        <a href="/contacts">Contact</a>
-                                    </li>
-                                </ul><!-- .menu -->
-                            </nav><!-- .main-navigation -->
-                        </div><!-- .mobile-dropdown -->
-
-                        <!-- Toolbar -->
-                        <div class="toolbar">
-                            <span class="divider"></span>
-                            <div class="share-btn">
-                                <i class="pe-7s-share"></i>
-                                <ul class="dropdown">
-                                    <li><a href="#" class="sb-facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                    <li><a href="#" class="sb-twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                </ul>
-                            </div>
-                            <a href="/inscription" class="btn btn-sm btn-info btn-ghost btn-icon-left scroll-to" data-offset-top="115">
-                                <i class="pe-7s-download"></i>Page perso
-                            </a>
-                                <!-- Mobile Menu Toggle -->
-                            <div class="nav-toggle"><span></span></div>
-                        </div><!-- .toolbar -->
-                    </div><!-- .inner -->
-                </div><!-- .container -->
-            </header><!-- .navbar.navbar-fixed -->
-
-    <!-- Intro Section -->
-    <section class="intro-section padding-bottom-2x" style="background-image: url("""),_display_(/*114.84*/routes/*114.90*/.Assets.versioned("img/home/intro/2.jpg")),format.raw/*114.131*/(""");" data-stellar-background-ratio="0.65">
-        <span class="overlay" style="opacity: .85;"></span>
+Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.raw/*1.21*/("""
+    """),format.raw/*2.5*/("""<section class="intro-section padding-bottom-2x" style="background-image : url("""),_display_(/*2.85*/routes/*2.91*/.Assets.versioned("img/home/header4.jpg")),format.raw/*2.132*/(""");" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.15 ;"></span>
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 padding-bottom-3x mobile-center">
-                    <h2 class="text-light">Hack'4 dev</h2>
-                    <div class="video-popup-placeholder">
-                        <img src=""""),_display_(/*121.36*/routes/*121.42*/.Assets.versioned("img/home/intro/1.jpg")),format.raw/*121.83*/("""" alt="Video">
-                        <a href="https://vimeo.com/33984473" class="play-btn"></a>
-                    </div><!-- .video-popup-placeholder -->
-                    <p class="text-light opacity-50 hidden-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                    <div class="mobile-center">
-                    </div>
-                </div><!-- .col-lg-5. col-lg-offset-1 -->
+                    <h2 class="text-light"><strong>CIPMEN</strong></h2>
 
-                <!-- Features -->
+                </div>
+
                 <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
                     <div class="box-with-icon horizontal-box light-skin">
-                        <div class="box-with-icon-icon">
-                            <i class="pe-7s-cloud-upload"></i>
-                        </div>
                         <div class="box-with-icon-content">
-                            <h3 class="box-with-icon-title">Accompagnement business</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h3 class="text-light"><strong>+ 8 entrprises incubées</strong></h3>
                         </div>
-                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    </div>
                     <div class="box-with-icon horizontal-box light-skin">
-                        <div class="box-with-icon-icon">
-                            <i class="pe-7s-micro"></i>
-                        </div>
                         <div class="box-with-icon-content">
-                            <h3 class="box-with-icon-title">Développement international</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h3 class="text-light"><strong>+ 200 millions FCFA de CA cumulés</strong></h3>
                         </div>
-                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    </div>
                     <div class="box-with-icon horizontal-box light-skin">
-                        <div class="box-with-icon-icon">
-                            <i class="pe-7s-config"></i>
-                        </div>
                         <div class="box-with-icon-content">
-                            <h3 class="box-with-icon-title">Evénements</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h3 class="text-light"><strong>+ 11 évènements organisés en 2015</strong></h3>
                         </div>
-                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
+                    </div>
                     <div class="box-with-icon horizontal-box light-skin">
-                        <div class="box-with-icon-icon">
-                            <i class="pe-7s-comment"></i>
-                        </div>
                         <div class="box-with-icon-content">
-                            <h3 class="box-with-icon-title">Chat In Your App</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <h3 class="text-light"><strong>+ 3000 fans sur les réseaux sociaux</strong></h3>
                         </div>
-                    </div><!-- .box-with-icon.horizontal-box.light-skin -->
-                </div><!-- .col-lg-5. col-lg-offset-1 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .intro-section -->
+                    </div>
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-content">
+                            <h3 class="text-light"><strong>+ 16 projets en pré-incubation</strong></h3>
+                        </div>
+                    </div>
+                    <div class="box-with-icon horizontal-box light-skin">
+                        <div class="box-with-icon-content">
+                            <h3 class="text-light"><strong>+ Particpations à 15 évènements internationaux</strong></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Features -->
+    <section class="container padding-top-3x padding-bottom-3x" data-loop="true" data-interval="4000">
+        <h2 class="block-title text-center">Nos offres et services</h2>
+        <div class="testimonials-carousel" data-loop="true">
+            <div class="inner">
+                <div>
+                    <h3 class="testimonial-author-name text-center text-bold">Préincubation</h3>
+                    <p>Vous avez un projet d’entreprise et un début de solution technologique ?</p>
+                    <p>Vous voulez pousser cette innovation sur le marché et trouver vos premiers partenaires et investisseurs ?<p>
+                    <p>Le programme de préincubation est fait pour vous !</p>
+                    <p>Participez et bénéficiez de locaux, d’un coaching intensif et de business development pendant 6 mois aux côtés d’autres entrepreneurs de talent.</p>
+                    <p> Alors, prêt pour relever le défi et booster votre startup ?</p>
+                    <h3 class="testimonial-author-name text-center text-bold">
+                        Qu’est ce que la préincubation m’apporte ?</h3>
+                    <p> Pendant 6 mois :</p>
+                    <ol>
+                        <li> Locaux équipés en plein centre-ville aux côtés d’autres entrepreneurs</li>
+                        <li>
+                            Coaching et formation (business model, acquisition client, ressources humaines et marketing pour startups, levée de fonds, pitch aux investisseurs, etc.)</li>
+                        <li>
+                            Accompagnement en business développement (recherche de partenaires privés ou public, organisation de rendez-vous, aide négociation contrats, etc.)</li>
+                        <li> Mise en avant lors d’événements (HACK4dev, web 2.0 , témoignages dans universités, etc.)</li>
+                        <li>
+                            Communication et relation presse (réseaux sociaux du CTIC, médias partenaires, journalistes</li>
+                        <li> Aide à la levée de fond (mise en relation avec bailleurs, préparation concours, etc...).</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3 class="testimonial-author-name text-center text-bold">Incubation</h3>
+                    <p>L'incubation est une combinaison unique et flexible, un programme d'accompagnement taillé sur-mesure pour chaque entreprise.</p>
+                    <p>Ce programme structurant permet, sur un cycle de 3 ans, de mettre en place et de dérouler un dispositif et des stratégies en vue d'atteindre les objectifs de l'entreprise.</p>
+                    <p>Il s'agit d'impacter sur le développement des affaires à travers un appui en marketing, en communication, en approche commerciale, en gain de visibilité et par le renforcement de capacités des équipes.</p>
+                    <p>L'incubation est conçue pour promouvoir et développer des entreprises TIC à fort potentiel en les soutenant au stade précoce de leur développement.</p>
+                    <p>L’incubateur propose des services d’hébergement, de développement d'affaires, de gestion comptable pour les entreprises du secteur TIC déjà créées et cherchant à booster leur croissance au Sénégal et en Afrique de l'Ouest.</p>
+
+                    <h3 class="testimonial-author-name text-center text-bold">Qu’est ce que l’Incubation m’apporte ?</h3>
+                    <ol>
+                        <li> Locaux équipés + internet + salles de réunion</li>
+                        <li> Réunion de suivi : 1h / semaine + fiche de suivi</li>
+                        <li> Business development : 2h / semaine</li>
+                        <li> Point mensuel avec l'équipe de CIPMEN : 1h /mois</li>
+                        <li> Coaching et montée en compétence des équipes</li>
+                        <li> Gestion comptable et fiscale</li>
+                        <li> Rencontres avec nos partenaires</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="fw-section bg-white border-top padding-top-3x padding-bottom-3x">
         <div class="container">
-            <h2 class="block-title text-center">Nos offres
-                <small>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</small>
-            </h2>
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
-                            <i class="pe-7s-cloud-upload"></i>
+                            <i class="pe-7s-study"></i>
                         </div>
-                        <h3 class="box-with-icon-title">Accompagnement business</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
+                        <h3 class="box-with-icon-title">Pre Incubation</h3>
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
-                            <i class="pe-7s-micro"></i>
+                            <i class="pe-7s-science"></i>
                         </div>
-                        <h3 class="box-with-icon-title">Développement international</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
+                        <h3 class="box-with-icon-title">Incubation</h3>
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
-                            <i class="pe-7s-config"></i>
+                            <i class="pe-7s-bookmarks"></i>
                         </div>
-                        <h3 class="box-with-icon-title">Financement</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
-            </div><!-- .row -->
+                        <h3 class="box-with-icon-title">Prestation à la carte</h3>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
                             <i class="pe-7s-credit"></i>
                         </div>
                         <h3 class="box-with-icon-title">Evénements</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
                             <i class="pe-7s-comment"></i>
                         </div>
-                        <h3 class="box-with-icon-title">Hébergement</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
+                        <h3 class="box-with-icon-title">Coworking</h3>
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-icon text-center">
                         <div class="box-with-icon-icon">
                             <i class="pe-7s-date"></i>
                         </div>
-                        <h3 class="box-with-icon-title">Coatching</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div><!-- .box-with-icon -->
-                </div><!-- .col-sm-4 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
+                        <h3 class="box-with-icon-title">Formations</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Video Popup -->
-    <section class="fw-section parallax text-center padding-top-3x padding-bottom-3x" style="background-image: url("""),_display_(/*246.117*/routes/*246.123*/.Assets.versioned("img/home/video-bg.jpg")),format.raw/*246.165*/(""");" data-stellar-background-ratio="0.65">
+    <section class="fw-section parallax text-center padding-top-3x padding-bottom-3x" style="background-image : url("""),_display_(/*154.118*/routes/*154.124*/.Assets.versioned("img/home/header2.jpg")),format.raw/*154.165*/(""");" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity: .78;"></span>
         <div class="container padding-top-3x padding-bottom-3x">
-            <!-- Remove ".light-skin" class to alter appearance. -->
-            <a href="https://vimeo.com/33984473" class="video-popup-btn light-skin space-top-3x space-bottom">
+            <a href="https://www.youtube.com/watch?v=CoDBASGwbCY" class="video-popup-btn light-skin space-top-3x space-bottom">
                 <i class="pe-7s-film"></i>
             </a>
-            <p class="text-lg text-light space-bottom-2x">Vidéo de présentation</p>
-        </div><!-- .container -->
-    </section><!-- .fw-section -->
+            <p class="text-lg text-light space-bottom-2x">Vidéo de présentation du CIPMEN</p>
+        </div>
+    </section>
 
-    <!-- Testimonials Carousel -->
-    <!-- Data API:
-      data-loop="true/false" enable/disable looping
-      data-autoplay="true/false" enable/disable carousel autoplay
-      data-interval="3000" autoplay interval timeout in miliseconds 
-      Simply add necessary data attribute to the ".testimonials-carousel" with appropriate value to adjust carousel functionality.
-     -->
-    <section class="container padding-top-3x padding-bottom-3x">
+    <section class="container padding-top-3x padding-bottom-3x" data-loop="true" data-interval="4000">
         <h2 class="block-title text-center">Témoignages</h2>
         <div class="testimonials-carousel" data-loop="true">
             <div class="inner">
                 <div class="testimonial">
                     <div class="testimonial-author-ava">
-                        <img src=""""),_display_(/*270.36*/routes/*270.42*/.Assets.versioned("img/testimonials/01.jpg")),format.raw/*270.86*/("""" alt="Jessie Pinkman">
+                        <img src=""""),_display_(/*170.36*/routes/*170.42*/.Assets.versioned("img/testimonials/01.jpg")),format.raw/*170.86*/("""" alt="Jessie Pinkman">
                     </div>
-                    <h3 class="testimonial-author-name">Bob marley</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                    <img src=""""),_display_(/*274.32*/routes/*274.38*/.Assets.versioned("img/testimonials/logo01.png")),format.raw/*274.86*/("""" alt="MailChimp">
-                </div><!-- .testimonial -->
+                    <h3 class="testimonial-author-name">Souleymane Drave</h3>
+                    <p>Tous les jours un petit pas pour l'entrepreneur, mais un grand pas pour le développement de l'Afrique. Merci CIPMEN.</p>
+                </div>
                 <div class="testimonial">
                     <div class="testimonial-author-ava">
-                        <img src=""""),_display_(/*278.36*/routes/*278.42*/.Assets.versioned("img/testimonials/02.jpg")),format.raw/*278.86*/("""" alt="Lara Goodwill">
+                        <img src=""""),_display_(/*177.36*/routes/*177.42*/.Assets.versioned("img/testimonials/02.jpg")),format.raw/*177.86*/("""" alt="Lara Goodwill">
                     </div>
-                    <h3 class="testimonial-author-name">Damian Marley</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                    <img src=""""),_display_(/*282.32*/routes/*282.38*/.Assets.versioned("img/testimonials/logo02.png")),format.raw/*282.86*/("""" alt="WordPress">
-                </div><!-- .testimonial -->
+                    <h3 class="testimonial-author-name">Fatou Guirassy</h3>
+                    <p>Belle expérience, belle équipe Longue vie au CIPMEN.</p>
+                </div>
                 <div class="testimonial">
                     <div class="testimonial-author-ava">
-                        <img src=""""),_display_(/*286.36*/routes/*286.42*/.Assets.versioned("img/testimonials/03.jpg")),format.raw/*286.86*/("""" alt="Mike Johnson">
+                        <img src=""""),_display_(/*184.36*/routes/*184.42*/.Assets.versioned("img/testimonials/03.jpg")),format.raw/*184.86*/("""" alt="Mike Johnson">
                     </div>
-                    <h3 class="testimonial-author-name">Michael Jackson</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-                    <img src=""""),_display_(/*290.32*/routes/*290.38*/.Assets.versioned("img/testimonials/logo03.png")),format.raw/*290.86*/("""" alt="Bootstrap">
-                </div><!-- .testimonial -->
-            </div><!-- .inner -->
-        </div><!-- .testimonials-carousel -->
-    </section><!-- .container.padding-bottom-3x -->
+                    <h3 class="testimonial-author-name">Paul Swider</h3>
+                    <p>Thanks for the welcome to your land of opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <!-- Team -->
     <section class="fw-section bg-white padding-top-3x padding-bottom-3x">
         <div class="container">
             <h2 class="block-title text-center">
@@ -334,15 +229,13 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
             </h2>
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*309.40*/routes/*309.46*/.Assets.versioned("img/team/01.jpg")),format.raw/*309.82*/("""" alt="Johnathan Doe">
+                            <img src=""""),_display_(/*203.40*/routes/*203.46*/.Assets.versioned("img/team/01.jpg")),format.raw/*203.82*/("""" alt="Johnathan Doe">
                         </div>
-                        <h3 class="box-with-image-title">Moctac
+                        <h3 class="box-with-image-title">Moktar Allahoury
                             <small>CEO</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -354,18 +247,16 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*332.40*/routes/*332.46*/.Assets.versioned("img/team/02.jpg")),format.raw/*332.82*/("""" alt="Anabelle Dorris">
+                            <img src=""""),_display_(/*224.40*/routes/*224.46*/.Assets.versioned("img/team/02.jpg")),format.raw/*224.82*/("""" alt="Anabelle Dorris">
                         </div>
-                        <h3 class="box-with-image-title">Bambino
+                        <h3 class="box-with-image-title">Salissou Mato
                             <small>Business developper</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -377,18 +268,16 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*355.40*/routes/*355.46*/.Assets.versioned("img/team/03.jpg")),format.raw/*355.82*/("""" alt="Taylor White">
+                            <img src=""""),_display_(/*245.40*/routes/*245.46*/.Assets.versioned("img/team/03.jpg")),format.raw/*245.82*/("""" alt="Taylor White">
                         </div>
-                        <h3 class="box-with-image-title">Maliyaro
-                            <small>UX / UI Engeneer</small>
+                        <h3 class="box-with-image-title">Houssein Ahssimi
+                            <small>Community Manager</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -400,21 +289,19 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
-            </div><!-- .row -->
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*381.40*/routes/*381.46*/.Assets.versioned("img/team/04.jpg")),format.raw/*381.82*/("""" alt="Suasanna Davis">
+                            <img src=""""),_display_(/*269.40*/routes/*269.46*/.Assets.versioned("img/team/04.jpg")),format.raw/*269.82*/("""" alt="Suasanna Davis">
                         </div>
-                        <h3 class="box-with-image-title">Brelote Ba
-                            <small>Marketing Director</small>
+                        <h3 class="box-with-image-title">Fatoumata Bako
+                            <small>Project Manager</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -426,18 +313,16 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*404.40*/routes/*404.46*/.Assets.versioned("img/team/05.jpg")),format.raw/*404.82*/("""" alt="Christopher Walker">
+                            <img src=""""),_display_(/*290.40*/routes/*290.46*/.Assets.versioned("img/team/05.jpg")),format.raw/*290.82*/("""" alt="Christopher Walker">
                         </div>
-                        <h3 class="box-with-image-title">Housseini
-                            <small>Chauffeur</small>
+                        <h3 class="box-with-image-title">Kassai Bako
+                            <small>Executive assistant</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -449,18 +334,16 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-google-plus"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
+                    </div>
+                </div>
                 <div class="col-sm-4">
-                    <!-- Use ".light-skin" class to alter appearance. -->
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*427.40*/routes/*427.46*/.Assets.versioned("img/team/06.jpg")),format.raw/*427.82*/("""" alt="Endy Garcia">
+                            <img src=""""),_display_(/*311.40*/routes/*311.46*/.Assets.versioned("img/team/06.jpg")),format.raw/*311.82*/("""" alt="Endy Garcia">
                         </div>
-                        <h3 class="box-with-image-title">Emilie la joie
-                            <small>Java Developer</small>
+                        <h3 class="box-with-image-title">Keita Seydou
+                            <small>Account Manager</small>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         <div class="social-bar text-center">
                             <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
                                 <i class="fa fa-facebook"></i>
@@ -472,62 +355,12 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </div>
-                    </div><!-- .box-with-image -->
-                </div><!-- .col-sm-4 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- .fw-section.bg-white -->
-
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-        <i class="icon-arrow-up"></i>
-    </a><!-- .scroll-to-top-btn -->
-
-    <!-- Footer -->
-    <!-- Use modifier class ".footer-dark" to switch to dark skin. -->
-    <footer class="footer space-top-3x">
-        <div class="container">
-            <!-- Copyright -->
-            <div class="copyright">
-                <div class="inner">
-                    <div class="column">
-                        <span class="copy-text">&copy; 2016. Tous droits réservés</span>
-                    </div><!-- .column -->
-                    <div class="column">
-                        <nav class="footer-nav">
-                            <ul>
-                                <li><a href="/mediatheques">Mediathèque</a></li>
-                                <li><a href="/postule">Porteurs de projet</a></li>
-                                <li><a href="/contacts">Contacts</a></li>
-                            </ul>
-                        </nav><!-- .footer-nav -->
-                    </div><!-- .column -->
-                    <div class="column">
-                        <div class="social-bar">
-                            <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        </div><!-- .social-bar -->
-                    </div><!-- .column -->
-                </div><!-- .inner -->
-            </div><!-- .copyright -->
-        </div><!-- .container -->
-    </footer><!-- .footer --></div><!-- .page-wrapper -->
-
-<!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-<script src=""""),_display_(/*486.15*/routes/*486.21*/.Assets.versioned("js/vendor/jquery-2.1.4.min.js")),format.raw/*486.71*/(""""></script>
-<script src=""""),_display_(/*487.15*/routes/*487.21*/.Assets.versioned("js/vendor/bootstrap.min.js")),format.raw/*487.68*/(""""></script>
-<script src=""""),_display_(/*488.15*/routes/*488.21*/.Assets.versioned("js/vendor/placeholder.js")),format.raw/*488.66*/(""""></script>
-<script src=""""),_display_(/*489.15*/routes/*489.21*/.Assets.versioned("js/vendor/smoothscroll.js")),format.raw/*489.67*/(""""></script>
-<script src=""""),_display_(/*490.15*/routes/*490.21*/.Assets.versioned("js/vendor/jquery.stellar.min.js")),format.raw/*490.73*/(""""></script>
-<script src=""""),_display_(/*491.15*/routes/*491.21*/.Assets.versioned("js/vendor/velocity.min.js")),format.raw/*491.67*/(""""></script>
-<script src=""""),_display_(/*492.15*/routes/*492.21*/.Assets.versioned("js/vendor/magnific-popup.min.js")),format.raw/*492.73*/(""""></script>
-<script src=""""),_display_(/*493.15*/routes/*493.21*/.Assets.versioned("js/vendor/owl.carousel.min.js")),format.raw/*493.71*/(""""></script>
-<script src=""""),_display_(/*494.15*/routes/*494.21*/.Assets.versioned("js/scripts.js")),format.raw/*494.55*/(""""></script>
-
-</body><!-- <body> -->
-
-</html>
-"""))
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+""")))}))
       }
     }
   }
@@ -547,11 +380,11 @@ Seq[Any](format.raw/*1.1*/("""<!DOCTYPE html>
 object incubateur extends incubateur_Scope0.incubateur
               /*
                   -- GENERATED --
-                  DATE: Tue Mar 01 20:44:37 WAT 2016
+                  DATE: Sun Mar 06 00:55:42 WAT 2016
                   SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/incubateur.scala.html
-                  HASH: 8ad47baae5c58e5a9d6e99d5b38ab49b79bf5412
-                  MATRIX: 837->0|1497->633|1512->639|1565->671|1648->727|1663->733|1716->765|1898->920|1913->926|1973->965|2057->1022|2072->1028|2134->1069|2263->1171|2278->1177|2349->1227|2457->1308|2472->1314|2535->1356|3697->2491|3712->2497|3766->2530|7582->6318|7598->6324|7662->6365|8118->6793|8134->6799|8197->6840|16421->15035|16438->15041|16503->15083|17850->16402|17866->16408|17932->16452|18455->16947|18471->16953|18541->17001|18770->17202|18786->17208|18852->17252|19377->17749|19393->17755|19463->17803|19692->18004|19708->18010|19774->18054|20300->18552|20316->18558|20386->18606|21203->19395|21219->19401|21277->19437|22754->20886|22770->20892|22828->20928|24330->22402|24346->22408|24404->22444|25961->23973|25977->23979|26035->24015|27538->25490|27554->25496|27612->25532|29103->26995|29119->27001|29177->27037|32374->30206|32390->30212|32462->30262|32517->30289|32533->30295|32602->30342|32657->30369|32673->30375|32740->30420|32795->30447|32811->30453|32879->30499|32934->30526|32950->30532|33024->30584|33079->30611|33095->30617|33163->30663|33218->30690|33234->30696|33308->30748|33363->30775|33379->30781|33451->30831|33506->30858|33522->30864|33578->30898
-                  LINES: 32->1|48->17|48->17|48->17|49->18|49->18|49->18|52->21|52->21|52->21|53->22|53->22|53->22|56->25|56->25|56->25|59->28|59->28|59->28|78->47|78->47|78->47|145->114|145->114|145->114|152->121|152->121|152->121|277->246|277->246|277->246|301->270|301->270|301->270|305->274|305->274|305->274|309->278|309->278|309->278|313->282|313->282|313->282|317->286|317->286|317->286|321->290|321->290|321->290|340->309|340->309|340->309|363->332|363->332|363->332|386->355|386->355|386->355|412->381|412->381|412->381|435->404|435->404|435->404|458->427|458->427|458->427|517->486|517->486|517->486|518->487|518->487|518->487|519->488|519->488|519->488|520->489|520->489|520->489|521->490|521->490|521->490|522->491|522->491|522->491|523->492|523->492|523->492|524->493|524->493|524->493|525->494|525->494|525->494
+                  HASH: 70e12ec181f28228ddf4f3d2733976c888a3c5cf
+                  MATRIX: 837->1|863->19|901->20|933->26|1039->106|1053->112|1115->153|10230->9239|10247->9245|10311->9286|11226->10173|11242->10179|11308->10223|11773->10660|11789->10666|11855->10710|12253->11080|12269->11086|12335->11130|13139->11906|13155->11912|13213->11948|14460->13167|14476->13173|14534->13209|15802->14449|15818->14455|15876->14491|17189->15776|17205->15782|17263->15818|18527->17054|18543->17060|18601->17096|19864->18331|19880->18337|19938->18373
+                  LINES: 32->1|32->1|32->1|33->2|33->2|33->2|33->2|185->154|185->154|185->154|201->170|201->170|201->170|208->177|208->177|208->177|215->184|215->184|215->184|234->203|234->203|234->203|255->224|255->224|255->224|276->245|276->245|276->245|300->269|300->269|300->269|321->290|321->290|321->290|342->311|342->311|342->311
                   -- GENERATED --
               */
           

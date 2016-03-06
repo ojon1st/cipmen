@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/home/brabo/IdeaProjects/cipmen/conf/routes
-// @DATE:Wed Mar 02 01:12:29 WAT 2016
+// @DATE:Sun Mar 06 00:49:10 WAT 2016
 
 
 package router {
