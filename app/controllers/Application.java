@@ -59,14 +59,20 @@ public class Application extends Controller {
         Form<User> form = Form.form(User.class);
         User user = form.bindFromRequest().get();
 
+        System.out.println("Enter authentification");
+
         if (form.hasErrors()) {
+            System.out.println("Formulaire error");
             flash("error", " Email ou mot de passe incorrect. Veuillez saisir à nouveau");
             return redirect("/connexion");
         } else {
+            System.out.println("Formulaire Ok");
             if ((new Utilisateur()).authentification(user) == null) {
+                System.out.println("user : 0");
                 flash("error", " Email ou mot de passe incorrect. Ce utilisateur n'a pas été enregistré dans la base de donnée");
                 return redirect("/connexion");
             } else {
+                System.out.println("user : 1");
                 flash("success", " Vous êtes authentifié");
                 session("email", (new Utilisateur()).authentification(user).getEmail());
                 session("profil", (new Utilisateur()).authentification(user).getProfil());
