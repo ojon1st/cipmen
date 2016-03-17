@@ -32,7 +32,7 @@ class evenements extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
 Seq[Any](format.raw/*1.31*/("""
 
 """),_display_(/*3.2*/main("Evènements")/*3.20*/{_display_(Seq[Any](format.raw/*3.21*/("""
-    """),format.raw/*4.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url("""),_display_(/*4.80*/routes/*4.86*/.Assets.versioned("img/home/header.jpg")),format.raw/*4.126*/(""");" data-stellar-background-ratio="0.65">
+    """),format.raw/*4.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url ( """),_display_(/*4.82*/routes/*4.88*/.Assets.versioned("img/home/header.jpg")),format.raw/*4.128*/(""" """),format.raw/*4.129*/(""") ;" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity :.25 ;"></span>
         <div class="container">
             <div class="inner">
@@ -115,11 +115,11 @@ Seq[Any](format.raw/*1.31*/("""
 object evenements extends evenements_Scope0.evenements
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 22:51:43 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/evenements.scala.html
-                  HASH: 4311c3f1898b377f7099b9362520d75b36d5c416
-                  MATRIX: 764->1|888->30|916->33|942->51|980->52|1011->57|1112->132|1126->138|1187->178|1745->709|1789->737|1828->738|1873->755|2025->880|2043->889|2072->897|2112->910|2127->916|2214->981|2416->1156|2434->1165|2463->1173|3270->1953|3288->1962|3317->1970|3347->1973|3365->1982|3396->1991|3461->2029|3517->2064|3620->2136|3661->2149
-                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|35->4|35->4|35->4|50->19|50->19|50->19|51->20|53->22|53->22|53->22|53->22|53->22|53->22|56->25|56->25|56->25|70->39|70->39|70->39|70->39|70->39|70->39|71->40|71->40|74->43|75->44
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/evenements.scala.html
+                  HASH: 94e46de31b91ae74b1c82a02a5e3ffbdfa0757e2
+                  MATRIX: 764->1|888->30|916->33|942->51|980->52|1011->57|1114->134|1128->140|1189->180|1218->181|1777->713|1821->741|1860->742|1905->759|2057->884|2075->893|2104->901|2144->914|2159->920|2246->985|2448->1160|2466->1169|2495->1177|3302->1957|3320->1966|3349->1974|3379->1977|3397->1986|3428->1995|3493->2033|3549->2068|3652->2140|3693->2153
+                  LINES: 27->1|32->1|34->3|34->3|34->3|35->4|35->4|35->4|35->4|35->4|50->19|50->19|50->19|51->20|53->22|53->22|53->22|53->22|53->22|53->22|56->25|56->25|56->25|70->39|70->39|70->39|70->39|70->39|70->39|71->40|71->40|74->43|75->44
                   -- GENERATED --
               */
           

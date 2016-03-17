@@ -30,7 +30,7 @@ class profil extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Form
 
 
 Seq[Any](_display_(/*2.2*/main("Profil")/*2.16*/{_display_(Seq[Any](format.raw/*2.17*/("""
-    """),format.raw/*3.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url("""),_display_(/*3.80*/routes/*3.86*/.Assets.versioned("img/home/header.jpg")),format.raw/*3.126*/(""");" data-stellar-background-ratio="0.65">
+    """),format.raw/*3.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url ( """),_display_(/*3.82*/routes/*3.88*/.Assets.versioned("img/home/header.jpg")),format.raw/*3.128*/(""" """),format.raw/*3.129*/(""") ;" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity :.25 ;"></span>
         <div class="container">
             <div class="inner">
@@ -49,6 +49,7 @@ Seq[Any](_display_(/*2.2*/main("Profil")/*2.16*/{_display_(Seq[Any](format.raw/*
                 <nav class="side-nav">
                     <ul role="tablist">
                         <li class="active"><a href="#ressources" role="tab" data-toggle="tab">Mes ressources</a></li>
+                        <li><a href="/deconnexion" role="tab" >Déconnexion</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,10 +60,10 @@ Seq[Any](_display_(/*2.2*/main("Profil")/*2.16*/{_display_(Seq[Any](format.raw/*
                         <div class="table-responsive space-bottom-2x">
                             <table class="table-striped">
                                 <tr>
-                                    <td>Concours</td>
+                                    <td><a href=""""),_display_(/*33.51*/routes/*33.57*/.Assets.versioned("ressources/canvas.pptx")),format.raw/*33.100*/("""" title="" >Business Canevas</a> </td>
                                 </tr>
                                 <tr>
-                                    <td><a href="" title="" >Business Canevas</a> </td>
+                                    <td><a href=""""),_display_(/*36.51*/routes/*36.57*/.Assets.versioned("ressources/pitch_19.pptx")),format.raw/*36.102*/("""" title="" >Model Pitch</a> </td>
                                 </tr>
                             </table>
                         </div>
@@ -91,11 +92,11 @@ Seq[Any](_display_(/*2.2*/main("Profil")/*2.16*/{_display_(Seq[Any](format.raw/*
 object profil extends profil_Scope0.profil
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 23:04:54 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/profil.scala.html
-                  HASH: 7e66193f331b9caa870ea4b580f3fda3cde3846a
-                  MATRIX: 829->2|851->16|889->17|920->22|1021->97|1035->103|1096->143
-                  LINES: 32->2|32->2|32->2|33->3|33->3|33->3|33->3
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/profil.scala.html
+                  HASH: 0d77526313e20ec1fb857ff0953a9254e8899b4d
+                  MATRIX: 829->2|851->16|889->17|920->22|1023->99|1037->105|1098->145|1127->146|2422->1414|2437->1420|2502->1463|2693->1627|2708->1633|2775->1678
+                  LINES: 32->2|32->2|32->2|33->3|33->3|33->3|33->3|33->3|63->33|63->33|63->33|66->36|66->36|66->36
                   -- GENERATED --
               */
           

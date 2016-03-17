@@ -33,7 +33,7 @@ Seq[Any](format.raw/*1.25*/("""
 
 """),_display_(/*3.2*/main("Evènement")/*3.19*/{_display_(Seq[Any](format.raw/*3.20*/("""
 
-    """),format.raw/*5.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url("""),_display_(/*5.80*/routes/*5.86*/.Assets.versioned("img/home/header.jpg")),format.raw/*5.126*/(""");" data-stellar-background-ratio="0.65">
+    """),format.raw/*5.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url ( """),_display_(/*5.82*/routes/*5.88*/.Assets.versioned("img/home/header.jpg")),format.raw/*5.128*/(""" """),format.raw/*5.129*/(""") ;" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity :.25 ;"></span>
         <div class="container">
             <div class="inner">
@@ -106,11 +106,11 @@ Seq[Any](format.raw/*1.25*/("""
 object evenement extends evenement_Scope0.evenement
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 22:51:43 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/evenement.scala.html
-                  HASH: 8b4989927474874b7261b874596842a61b664822
-                  MATRIX: 756->1|874->24|902->27|927->44|965->45|997->51|1098->126|1112->132|1173->172|1712->684|1730->693|1760->702|1813->728|1869->763|2122->989|2137->995|2224->1060|2301->1110|2316->1116|2403->1181|2480->1231|2495->1237|2583->1303|2695->1388|2750->1422|2945->1590|2963->1599|2993->1608
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|36->5|36->5|36->5|52->21|52->21|52->21|53->22|53->22|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|61->30|61->30|63->32|63->32|63->32
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/evenement.scala.html
+                  HASH: b5627c9b643089570f6b8da8bac565cda5710111
+                  MATRIX: 756->1|874->24|902->27|927->44|965->45|997->51|1100->128|1114->134|1175->174|1204->175|1744->688|1762->697|1792->706|1845->732|1901->767|2154->993|2169->999|2256->1064|2333->1114|2348->1120|2435->1185|2512->1235|2527->1241|2615->1307|2727->1392|2782->1426|2977->1594|2995->1603|3025->1612
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|36->5|36->5|36->5|36->5|52->21|52->21|52->21|53->22|53->22|56->25|56->25|56->25|57->26|57->26|57->26|58->27|58->27|58->27|61->30|61->30|63->32|63->32|63->32
                   -- GENERATED --
               */
           

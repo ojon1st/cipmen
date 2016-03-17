@@ -30,7 +30,7 @@ class postule extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,For
 
 
 Seq[Any](_display_(/*2.2*/main("Je postule")/*2.20*/{_display_(Seq[Any](format.raw/*2.21*/("""
-    """),format.raw/*3.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url("""),_display_(/*3.80*/routes/*3.86*/.Assets.versioned("img/home/header.jpg")),format.raw/*3.126*/(""");" data-stellar-background-ratio="0.65">
+    """),format.raw/*3.5*/("""<div class="page-title pt-dark pt-parallax" style="background-image : url ( """),_display_(/*3.82*/routes/*3.88*/.Assets.versioned("img/home/header.jpg")),format.raw/*3.128*/(""" """),format.raw/*3.129*/(""") ;" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity :.25 ;"></span>
         <div class="container">
             <div class="inner">
@@ -209,11 +209,11 @@ Seq[Any](_display_(/*2.2*/main("Je postule")/*2.20*/{_display_(Seq[Any](format.r
 object postule extends postule_Scope0.postule
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 22:51:43 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/postule.scala.html
-                  HASH: e3b5569b97445a39081da6ff9f09703e7df64b63
-                  MATRIX: 831->2|857->20|895->21|926->26|1027->101|1041->107|1102->147|2067->1085|2113->1122|2153->1124|2198->1142|2212->1147|2253->1167|2298->1181|2339->1195|2387->1234|2427->1236|2472->1254|2486->1259|2529->1281|2574->1295|2615->1308
-                  LINES: 32->2|32->2|32->2|33->3|33->3|33->3|33->3|57->27|57->27|57->27|58->28|58->28|58->28|59->29|60->30|60->30|60->30|61->31|61->31|61->31|62->32|63->33
+                  DATE: Thu Mar 17 17:09:55 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/postule.scala.html
+                  HASH: e80b20500e470556bab82188b79d475658d300dc
+                  MATRIX: 831->2|857->20|895->21|926->26|1029->103|1043->109|1104->149|1133->150|2099->1089|2145->1126|2185->1128|2230->1146|2244->1151|2285->1171|2330->1185|2371->1199|2419->1238|2459->1240|2504->1258|2518->1263|2561->1285|2606->1299|2647->1312
+                  LINES: 32->2|32->2|32->2|33->3|33->3|33->3|33->3|33->3|57->27|57->27|57->27|58->28|58->28|58->28|59->29|60->30|60->30|60->30|61->31|61->31|61->31|62->32|63->33
                   -- GENERATED --
               */
           

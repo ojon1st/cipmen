@@ -4,7 +4,6 @@ import models.Utilisateur;
 import models.pojo.User;
 import play.data.Form;
 import play.db.jpa.Transactional;
-import play.libs.mailer.MailerClient;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.connexion;
@@ -15,8 +14,7 @@ import javax.inject.Inject;
 
 
 public class Application extends Controller {
-    @Inject
-    MailerClient mailerClient;
+
 
     @Transactional
     public Result index() {

@@ -98,8 +98,8 @@ Seq[Any](format.raw/*1.1*/("""<footer class="footer space-top-3x">
 object footer extends footer_Scope0.footer
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 12:22:16 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/footer.scala.html
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/footer.scala.html
                   HASH: 48d5fec080af085a8f8dc451612cca0a5c893d23
                   MATRIX: 829->0
                   LINES: 32->1

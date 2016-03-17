@@ -231,7 +231,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*203.40*/routes/*203.46*/.Assets.versioned("img/team/01.jpg")),format.raw/*203.82*/("""" alt="Johnathan Doe">
+                            <img src=""""),_display_(/*203.40*/routes/*203.46*/.Assets.versioned("img/team/1.jpg")),format.raw/*203.81*/("""" alt="Johnathan Doe">
                         </div>
                         <h3 class="box-with-image-title">Moktar Allahoury
                             <small>CEO</small>
@@ -252,7 +252,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*224.40*/routes/*224.46*/.Assets.versioned("img/team/02.jpg")),format.raw/*224.82*/("""" alt="Anabelle Dorris">
+                            <img src=""""),_display_(/*224.40*/routes/*224.46*/.Assets.versioned("img/team/2.jpg")),format.raw/*224.81*/("""" alt="Anabelle Dorris">
                         </div>
                         <h3 class="box-with-image-title">Salissou Mato
                             <small>Business developper</small>
@@ -273,7 +273,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*245.40*/routes/*245.46*/.Assets.versioned("img/team/03.jpg")),format.raw/*245.82*/("""" alt="Taylor White">
+                            <img src=""""),_display_(/*245.40*/routes/*245.46*/.Assets.versioned("img/team/3.jpg")),format.raw/*245.81*/("""" alt="Taylor White">
                         </div>
                         <h3 class="box-with-image-title">Houssein Ahssimi
                             <small>Community Manager</small>
@@ -297,7 +297,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*269.40*/routes/*269.46*/.Assets.versioned("img/team/04.jpg")),format.raw/*269.82*/("""" alt="Suasanna Davis">
+                            <img src=""""),_display_(/*269.40*/routes/*269.46*/.Assets.versioned("img/team/4.jpg")),format.raw/*269.81*/("""" alt="Suasanna Davis">
                         </div>
                         <h3 class="box-with-image-title">Fatoumata Bako
                             <small>Project Manager</small>
@@ -318,7 +318,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*290.40*/routes/*290.46*/.Assets.versioned("img/team/05.jpg")),format.raw/*290.82*/("""" alt="Christopher Walker">
+                            <img src=""""),_display_(/*290.40*/routes/*290.46*/.Assets.versioned("img/team/5.jpg")),format.raw/*290.81*/("""" alt="Christopher Walker">
                         </div>
                         <h3 class="box-with-image-title">Kassai Bako
                             <small>Executive assistant</small>
@@ -339,7 +339,7 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
                 <div class="col-sm-4">
                     <div class="box-with-image text-center">
                         <div class="box-with-image-image">
-                            <img src=""""),_display_(/*311.40*/routes/*311.46*/.Assets.versioned("img/team/06.jpg")),format.raw/*311.82*/("""" alt="Endy Garcia">
+                            <img src=""""),_display_(/*311.40*/routes/*311.46*/.Assets.versioned("img/team/6.jpg")),format.raw/*311.81*/("""" alt="Endy Garcia">
                         </div>
                         <h3 class="box-with-image-title">Keita Seydou
                             <small>Account Manager</small>
@@ -380,10 +380,10 @@ Seq[Any](_display_(/*1.2*/main("Incubateur")/*1.20*/{_display_(Seq[Any](format.r
 object incubateur extends incubateur_Scope0.incubateur
               /*
                   -- GENERATED --
-                  DATE: Sun Mar 06 00:55:42 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/incubateur.scala.html
-                  HASH: 70e12ec181f28228ddf4f3d2733976c888a3c5cf
-                  MATRIX: 837->1|863->19|901->20|933->26|1039->106|1053->112|1115->153|10230->9239|10247->9245|10311->9286|11226->10173|11242->10179|11308->10223|11773->10660|11789->10666|11855->10710|12253->11080|12269->11086|12335->11130|13139->11906|13155->11912|13213->11948|14460->13167|14476->13173|14534->13209|15802->14449|15818->14455|15876->14491|17189->15776|17205->15782|17263->15818|18527->17054|18543->17060|18601->17096|19864->18331|19880->18337|19938->18373
+                  DATE: Thu Mar 17 17:09:55 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/incubateur.scala.html
+                  HASH: 33f572258556c5cd2f8377dd586c977fd668c43a
+                  MATRIX: 837->1|863->19|901->20|933->26|1039->106|1053->112|1115->153|10230->9239|10247->9245|10311->9286|11226->10173|11242->10179|11308->10223|11773->10660|11789->10666|11855->10710|12253->11080|12269->11086|12335->11130|13139->11906|13155->11912|13212->11947|14459->13166|14475->13172|14532->13207|15800->14447|15816->14453|15873->14488|17186->15773|17202->15779|17259->15814|18523->17050|18539->17056|18596->17091|19859->18326|19875->18332|19932->18367
                   LINES: 32->1|32->1|32->1|33->2|33->2|33->2|33->2|185->154|185->154|185->154|201->170|201->170|201->170|208->177|208->177|208->177|215->184|215->184|215->184|234->203|234->203|234->203|255->224|255->224|255->224|276->245|276->245|276->245|300->269|300->269|300->269|321->290|321->290|321->290|342->311|342->311|342->311
                   -- GENERATED --
               */

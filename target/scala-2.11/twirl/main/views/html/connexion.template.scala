@@ -29,12 +29,11 @@ class connexion extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,F
       {
 
 
-Seq[Any](_display_(/*2.2*/main("Connexion")/*2.19*/{_display_(Seq[Any](format.raw/*2.20*/("""
-    """),format.raw/*3.5*/("""<div class="page-404">
+Seq[Any](_display_(/*1.2*/main("Connexion")/*1.19*/{_display_(Seq[Any](format.raw/*1.20*/("""
+    """),format.raw/*2.5*/("""<div class="page-404">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-                    <h1>Connexion</h1>
                     <form method="post" action="/connexion">
                         <div class="form-control">
                             <i class="pe-7s-mail"></i>
@@ -45,13 +44,14 @@ Seq[Any](_display_(/*2.2*/main("Connexion")/*2.19*/{_display_(Seq[Any](format.ra
                             <input type="password" name="password" placeholder="Mot de passe">
                         </div>
                         <div class="form-control">
-                            <button type="submit" class="btn btn-ghost btn-default">Connexion</button>
-                            <a class="btn btn-default" href="/inscription" title="Inscription">Inscription</a>
+                            <button type="submit" class="btn btn-default">Connexion</button>
+                        </div>
+                        <div class="form-control">
+                            <a class="btn btn-ghost btn-default" href="/inscription" title="Inscription">Créer un compte</a>
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
 """)))}))
@@ -74,11 +74,11 @@ Seq[Any](_display_(/*2.2*/main("Connexion")/*2.19*/{_display_(Seq[Any](format.ra
 object connexion extends connexion_Scope0.connexion
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 00:19:43 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/connexion.scala.html
-                  HASH: cdecd1aab5a2e0150ace13340cdd54a716b30adb
-                  MATRIX: 835->2|860->19|898->20|929->25
-                  LINES: 32->2|32->2|32->2|33->3
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/connexion.scala.html
+                  HASH: d9764c3196cb47667591bdfe97404bc06e77e4e7
+                  MATRIX: 835->1|860->18|898->19|929->24
+                  LINES: 32->1|32->1|32->1|33->2
                   -- GENERATED --
               */
           

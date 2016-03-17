@@ -54,8 +54,7 @@ Seq[Any](format.raw/*1.1*/("""<header class="navbar navbar-fixed">
                             <a href="#">Les incubés<span>&#8211;</span></a>
                             <ul class="sub-menu">
                                 <li><a href="/startup/stratetic">Stratetic</a></li>
-                                <li><a href="/startup/one">One</a></li>
-                                <li><a href="/startup/novateck">Novateck</a></li>
+                                <li><a href="/startup/apkode">APKode</a></li>
                             </ul>
                         </li>
                         <li>
@@ -113,9 +112,9 @@ Seq[Any](format.raw/*1.1*/("""<header class="navbar navbar-fixed">
 object header extends header_Scope0.header
               /*
                   -- GENERATED --
-                  DATE: Sat Mar 05 12:22:16 WAT 2016
-                  SOURCE: /home/brabo/IdeaProjects/cipmen/app/views/header.scala.html
-                  HASH: 5b3b3d7e95484b45f8672267641efcf612c505d1
+                  DATE: Thu Mar 17 17:09:56 WAT 2016
+                  SOURCE: /home/brabo/Desktop/cipmen/app/views/header.scala.html
+                  HASH: 1e747e9fc6d18a7f13f74b58c68b4e5823f2353e
                   MATRIX: 829->0|1019->164|1033->170|1086->203
                   LINES: 32->1|37->6|37->6|37->6
                   -- GENERATED --
