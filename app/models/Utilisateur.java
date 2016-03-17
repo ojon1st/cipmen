@@ -101,6 +101,21 @@ public class Utilisateur {
     }
 
     /**
+     * Find utilisateur by email
+     *
+     * @param email
+     * @return
+     */
+    public Utilisateur findByEmail(String email) {
+        try {
+            return (Utilisateur) JPA.em().createQuery("select utilisateur From Utilisateur utilisateur WHERE utilisateur.email = :email").setParameter("email", email).getSingleResult();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            return null;
+        }
+    }
+
+    /**
      * Create utilisateur
      *
      * @param utilisateur
@@ -109,15 +124,22 @@ public class Utilisateur {
     public String create(Utilisateur utilisateur) {
         String result = null;
 
-        utilisateur.setPassword(getSha512(utilisateur.getPass()));
+        Utilisateur utilisateurExiste = findByEmail(utilisateur.getEmail());
 
-        try {
-            JPA.em().persist(utilisateur);
-        } catch (Exception e) {
-            System.out.println(e.toString());
-            result = e.toString();
+        if(utilisateurExiste != null){
+            return "Votre email existe déjà, veuillez vous connecter avec ou utiliser un autre";
+        }else{
+            utilisateur.setPassword(getSha512(utilisateur.getPass()));
+
+            try {
+                JPA.em().persist(utilisateur);
+            } catch (Exception e) {
+                System.out.println(e.toString());
+                result = e.toString();
+            }
+            return result;
         }
-        return result;
+
     }
 
     /**

@@ -1,6 +1,6 @@
 
 @main("Profil"){
-    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header.jpg"));" data-stellar-background-ratio="0.65">
+    <div class="page-title pt-dark pt-parallax" style="background-image : url ( @routes.Assets.versioned("img/home/header.jpg") ) ;" data-stellar-background-ratio="0.65">
         <span class="overlay" style="opacity :.25 ;"></span>
         <div class="container">
             <div class="inner">
@@ -19,6 +19,7 @@
                 <nav class="side-nav">
                     <ul role="tablist">
                         <li class="active"><a href="#ressources" role="tab" data-toggle="tab">Mes ressources</a></li>
+                        <li><a href="/deconnexion" role="tab" >Déconnexion</a></li>
                     </ul>
                 </nav>
             </div>
@@ -29,10 +30,10 @@
                         <div class="table-responsive space-bottom-2x">
                             <table class="table-striped">
                                 <tr>
-                                    <td>Concours</td>
+                                    <td><a href="@routes.Assets.versioned("ressources/canvas.pptx")" title="" >Business Canevas</a> </td>
                                 </tr>
                                 <tr>
-                                    <td><a href="" title="" >Business Canevas</a> </td>
+                                    <td><a href="@routes.Assets.versioned("ressources/pitch_19.pptx")" title="" >Model Pitch</a> </td>
                                 </tr>
                             </table>
                         </div>

@@ -1,10 +1,8 @@
-
 @main("Connexion"){
     <div class="page-404">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-                    <h1>Connexion</h1>
                     <form method="post" action="/connexion">
                         <div class="form-control">
                             <i class="pe-7s-mail"></i>
@@ -15,13 +13,14 @@
                             <input type="password" name="password" placeholder="Mot de passe">
                         </div>
                         <div class="form-control">
-                            <button type="submit" class="btn btn-ghost btn-default">Connexion</button>
-                            <a class="btn btn-default" href="/inscription" title="Inscription">Inscription</a>
+                            <button type="submit" class="btn btn-default">Connexion</button>
+                        </div>
+                        <div class="form-control">
+                            <a class="btn btn-ghost btn-default" href="/inscription" title="Inscription">Créer un compte</a>
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
 }

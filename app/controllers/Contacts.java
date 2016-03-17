@@ -14,7 +14,7 @@ public class Contacts extends Controller {
         return ok(contacts.render());
     }
 
-    public Result create(){
+    public Result create() {
         Form<Contact> form = Form.form(Contact.class).bindFromRequest();
         if (form.hasErrors()) {
             flash("contacterror", "Erreur d'inscription, veuillez vérifier les données saisies");

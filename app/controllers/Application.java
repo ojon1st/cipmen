@@ -4,16 +4,19 @@ import models.Utilisateur;
 import models.pojo.User;
 import play.data.Form;
 import play.db.jpa.Transactional;
+import play.libs.mailer.MailerClient;
 import play.mvc.Controller;
-import play.mvc.Http;
 import play.mvc.Result;
 import views.html.connexion;
 import views.html.index;
 import views.html.inscription;
-import java.util.*;
+
+import javax.inject.Inject;
 
 
 public class Application extends Controller {
+    @Inject
+    MailerClient mailerClient;
 
     @Transactional
     public Result index() {
@@ -46,6 +49,7 @@ public class Application extends Controller {
             utilisateur.setProfil("user");
             String result = utilisateur.create(utilisateur);
             if (result != null) {
+                flash("error", "Votre email existe déjà, veuillez vous connecter avec ou utiliser un autre");
                 return redirect("/inscription");
             } else {
                 return redirect("/connexion");
@@ -57,22 +61,16 @@ public class Application extends Controller {
     @Transactional
     public Result authentification() {
         Form<User> form = Form.form(User.class);
-        User user = form.bindFromRequest().get();
-
-        System.out.println("Enter authentification");
 
         if (form.hasErrors()) {
-            System.out.println("Formulaire error");
             flash("error", " Email ou mot de passe incorrect. Veuillez saisir à nouveau");
             return redirect("/connexion");
         } else {
-            System.out.println("Formulaire Ok");
+            User user = form.bindFromRequest().get();
             if ((new Utilisateur()).authentification(user) == null) {
-                System.out.println("user : 0");
                 flash("error", " Email ou mot de passe incorrect. Ce utilisateur n'a pas été enregistré dans la base de donnée");
                 return redirect("/connexion");
             } else {
-                System.out.println("user : 1");
                 flash("success", " Vous êtes authentifié");
                 session("email", (new Utilisateur()).authentification(user).getEmail());
                 session("profil", (new Utilisateur()).authentification(user).getProfil());
@@ -81,7 +79,28 @@ public class Application extends Controller {
         }
     }
 
+    public Result sendemain() {
+        sendEmail();
+        return TODO;
+    }
 
+    public void sendEmail() {
+       /* String cid = "1234";
+        Email email = new Email()
+                .setSubject("Simple email")
+                .setFrom("Mister FROM <from@email.com>")
+                .addTo("Miss TO <to@email.com>")
+                        // adds attachment
+                .addAttachment("attachment.pdf", new File("/some/path/attachment.pdf"))
+                        // adds inline attachment from byte array
+                .addAttachment("data.txt", "data".getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE)
+                        // adds cid attachment
+                .addAttachment("image.jpg", new File("/some/path/image.jpg"), cid)
+                        // sends text, HTML or both...
+                .setBodyText("A text message")
+                .setBodyHtml("<html><body><p>An <b>html</b> message with cid <img src=\"cid:" + cid + "\"></p></body></html>");
+        mailerClient.send(email);*/
+    }
 
 }
 

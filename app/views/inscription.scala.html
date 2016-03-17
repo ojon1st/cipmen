@@ -4,7 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-                    <h1>Inscription</h1>
+                    @if(flash.containsKey("error")) {
+                        <h2>@flash.get("error")Elo</h2>
+                    }
                     <form method="post" action="/inscription">
                         <div class="form-control">
                             <i class="pe-7s-user"></i>
@@ -19,7 +21,7 @@
                             <input type="password" name="pass" placeholder="Mot de passe">
                         </div>
                         <div class="form-control">
-                            <button type="submit" class="btn btn-ghost btn-default">Inscription</button>
+                            <button type="submit" class="btn btn-default">Inscription</button>
                         </div>
                     </form>
                 </div>
