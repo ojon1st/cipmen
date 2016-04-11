@@ -1,0 +1,108 @@
+
+@main("Startup"){
+    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header1.jpg") ) ;" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.25 ;"></span>
+        <div class="container">
+            <div class="inner">
+                <div class="title">
+                    <h2 class="text-light"><strong>Novatech</strong></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container space-bottom-2x">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 space-bottom-2x">
+                <nav class="side-nav dark-skin">
+                    <ul role="tablist">
+                        <li class="active"><a href="#presentation" role="tab" data-toggle="tab">Présentation</a></li>
+                        <li><a href="#produits" role="tab" data-toggle="tab">Produits / services</a></li>
+                        <li><a href="#ask-question" class="scroll-to" data-offset-top="165">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-md-9 col-sm-8">
+                <div class="tab-content transparent space-bottom-2x">
+                    <div role="tabpanel" class="tab-pane transition fade scale in active" id="presentation">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#ac02">
+                                        Qui sommes-nous ?
+                                    </a>
+                                </div>
+                                <div id="ac02" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <p><strong>NOVATECH</strong> est une startup qui offre des solutions technologiques innovantes dans le domaine du Numérique.<br><br> Crée en 2014 avec une équipe de 4 personnes, NOVATECH est spécialisée dans les services réseaux et le développement d'applications mobiles et web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="produits">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                        Application mobile Guida
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        « Guida » est une application mobile qui permet aux populations de trouver ​ ​facilement et rapidement des maisons à louer ou à acheter. La recherche ​ ​de logements à Niamey et dans les autres villes du Niger ​étant pénible ​ ​ ​ car la demande est forte et l’offre est très réduite. Grâce à cette application ​ ​ mobile, vous pouvez facilement trouver des​ logements au Niger avec des ​ ​ images, de la géolocalisation, des alertes ​SMS et Email et la liste des ​ ​services sociaux aux alentours des logements ​ ​(école, pharmacie, clinique, ​ ​ boutique).                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion3" href="#pb02">
+                                        Système de Communication Unifiée
+                                    </a>
+                                </div>
+                                <div id="pb02" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        Il s'agit d'un Système de Communication qui permet de communiquer et de partager des ressources en Entreprise à travers leur réseau informatique existant Wifi ou Cablé. Il s'agit d'une solution Open Source qui vous permet d'échanger par Messagerie Instantanée, par Voix et par Video sans passer par Internet.                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile" id="ask-question">
+                    <form method="post" autocomplete="off" action="contacts">
+                        <h3 class="text-center">Vous voulez nous contacter ?</h3>
+                        <p class="text-gray text-center"><strong>daoudahamadou@@gmail.com<br>(227) 91 01 22 12</strong> </p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-control">
+                                    <i class="pe-7s-user"></i>
+                                    <input type="text" placeholder="Nom" name="nom" required="required">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-control">
+                                    <i class="pe-7s-mail"></i>
+                                    <input type="email" placeholder="Email" name="expediteur" required="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <i class="pe-7s-help1"></i>
+                            <textarea rows="3" placeholder="Message" name="message" required="required"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-right">
+                                <input type="hidden" name="newsletter" value="0">
+                                <input type="hidden" name="destinataire" value="contact@@stratetic.org">
+                                <button type="submit" class="btn btn-ghost btn-primary">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+}

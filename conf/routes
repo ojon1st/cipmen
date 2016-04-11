@@ -16,15 +16,14 @@ GET        /deconnexion            controllers.Application.deconnexion()
 POST       /newsletter              controllers.Newsletters.create()
 
 # Profils
-GET        /profil                 controllers.Profils.reads()
-
+GET        /profil                  controllers.Profils.reads()
 
 # Blog
-GET        /blogs                  controllers.Blogs.reads()
+GET        /blogs                   controllers.Blogs.reads()
 GET        /blogs/:lien             controllers.Blogs.read(lien: String)
 
 # Evenement
-GET        /evenements             controllers.Evenements.reads()
+GET        /evenements              controllers.Evenements.reads()
 GET        /evenements/:lien        controllers.Evenements.read(lien: String)
 
 # Startup
@@ -43,7 +42,7 @@ POST       /postule                controllers.Postules.create()
 
 # Contact
 GET        /contacts               controllers.Contacts.reads()
-POST       /contacts                controllers.Contacts.create()
+POST        /contacts              controllers.Contacts.create()
 
 
 

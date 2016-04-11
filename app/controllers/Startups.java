@@ -2,8 +2,7 @@ package controllers;
 
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.apkode;
-import views.html.stratetic;
+import views.html.*;
 
 /**
  * Created by brabo on 3/2/16.
@@ -21,6 +20,18 @@ public class Startups extends Controller {
                 return ok(stratetic.render());
             case "apkode" :
                 return ok(apkode.render());
+            case "e3d" :
+                return ok(e3d.render());
+            case "itechcom" :
+                return ok(itechcom.render());
+            case "icon" :
+                return ok(icon.render());
+            case "gimafor" :
+                return ok(gimafor.render());
+            case "novateh" :
+                return ok(novatech.render());
+            case "tech-innov" :
+                return ok(techinnov.render());
             default:
                 return redirect("/");
         }

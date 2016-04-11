@@ -1,0 +1,124 @@
+
+@main("Startup"){
+    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header1.jpg") ) ;" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.25 ;"></span>
+        <div class="container">
+            <div class="inner">
+                <div class="title">
+                    <h2 class="text-light"><strong>Tech Innov</strong></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container space-bottom-2x">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 space-bottom-2x">
+                <nav class="side-nav dark-skin">
+                    <ul role="tablist">
+                        <li class="active"><a href="#presentation" role="tab" data-toggle="tab">Présentation</a></li>
+                        <li><a href="#produits" role="tab" data-toggle="tab">Produits / services</a></li>
+                        <li><a href="#ask-question" class="scroll-to" data-offset-top="165">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-md-9 col-sm-8">
+                <div class="tab-content transparent space-bottom-2x">
+                    <div role="tabpanel" class="tab-pane transition fade scale in active" id="presentation">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#ac02">
+                                        Qui sommes-nous ?
+                                    </a>
+                                </div>
+                                <div id="ac02" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <p>Tech-Innov est une société à responsabilité limitée (SARL) de droit nigérien au capital social de 5 millions de Francs CFA.<br><br> Elle a été créée pour gérer, exploiter et commercialiser le système "Télé-Irrigation" et ses dérivés : Abreuvage Automatique, Kiosque d'Eau Potable en milieu rural, Méto -Mobile, Scrutateur discret et Centre Multimédia Agri-Infos. </p>
+                                        <div class="embed-responsive embed-responsive-16by9 space-top-2x space-bottom-2x">
+                                            <iframe src="https://www.youtube.com/embed/xiooV7lvsig" frameborder="0" allowfullscreen class="embed-responsive-item"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="produits">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                        La Télé-Irrigation
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        La Télé-Irrigation : c’est un procédé technologique qui permet à un agriculteur de piloter à distance le système d’irrigation de son exploitation agricole quelque soit sa position géographique et le temps au moyen de son téléphone mobile et du solaire suivant une distribution intelligente de l’eau (besoins, quantité, temps, type spéculation…).<br><br> La Télé-Irrigation permet également de collecter et diffuser en temps réel et à distance les données météorologiques et hydrologiques notamment la température, le taux d’humidité du sol, la pluviométrie, la radiation solaire, la vitesse du vent…. Ce dispositif permet à un agriculteur de s’enquérir de l’état du besoin en eau de son exploitation et les conditions climatiques qui y prévalait quelque soit sa position dans le monde.
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion3" href="#pb02">
+                                            Le Kiosque d'Eau Potable
+                                        </a>
+                                    </div>
+                                    <div id="pb02" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            Le Kiosque d'Eau Potable en milieu rural "Ruwa Rayuwa" système de puisage d'eau des nappes et traitement par royon ultraviolet au moyen du téléphone portable.<br><br>Un traitement bio et écologique (sans produits chimiques). Ce système se décline en 3 dimensions : kiosque communautaire, kiosque familial et kit individuel.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel">
+                                    <div class="panel-heading">
+                                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion3" href="#pb02">
+                                            La Météo Mobile
+                                        </a>
+                                    </div>
+                                    <div id="pb02" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            La Météo Mobile est un procédé technologique qui permet de relever et diffuser en temps réel au moyen du téléphone portable les données météorologiques et hydrologique d'un espace notamment la température, le taux d'humidité du sol, la pluviométrie, la radiation solaire, la vitesse du vent etc...<br><br>
+                                            Le système peut aussi alerter   l'utilisateur par sms grâce à un modem GSM/3G (greffé au dispositif) afin qu'il prenne connaissance de façon instantanée des données climatiques de son espace mais aussi qu'il puisse programmer le temps d'irrigation et optimiser la gestion de l'eau. En cas de voyage prolongé, l'utilisateur peut se de cette alerte comme indicateur pour non seulement s'informer de l'état du besoin en eau de son exploitation mai également prévoir et gérer la quantité d'eau nécessaire à l'irrigation de son exploitation pendant son absence.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tile" id="ask-question">
+                            <form method="post" autocomplete="off" action="contacts">
+                                <h3 class="text-center">Vous voulez nous contacter ?</h3>
+                                <p class="text-gray text-center"><strong>infos@@tele-irrigation.net<br>(227) 90 32 60 35 / 96 96 62 89</strong> </p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-control">
+                                            <i class="pe-7s-user"></i>
+                                            <input type="text" placeholder="Nom" name="nom" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-control">
+                                            <i class="pe-7s-mail"></i>
+                                            <input type="email" placeholder="Email" name="expediteur" required="required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-control">
+                                    <i class="pe-7s-help1"></i>
+                                    <textarea rows="3" placeholder="Message" name="message" required="required"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 text-right">
+                                        <input type="hidden" name="newsletter" value="0">
+                                        <input type="hidden" name="destinataire" value="contact@@stratetic.org">
+                                        <button type="submit" class="btn btn-ghost btn-primary">Envoyer</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+}
