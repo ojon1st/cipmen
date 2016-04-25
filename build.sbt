@@ -12,8 +12,7 @@ libraryDependencies ++= Seq(
   javaWs,
   javaJpa,
   "org.hibernate" % "hibernate-entitymanager" % "4.3.11.Final",
-  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
-  "com.typesafe.play" %% "play-mailer" % "3.0.1"
+  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the
