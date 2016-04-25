@@ -44,6 +44,9 @@ POST       /postule                controllers.Postules.create()
 GET        /contacts               controllers.Contacts.reads()
 POST        /contacts              controllers.Contacts.create()
 
+# Projet
+GET     /projet/safo                   controllers.Projets.readSafo()
+POST    /projet/safo                   controllers.Projets.create()
 
 
 # Map static resources from the /public folder to the /assets URL path

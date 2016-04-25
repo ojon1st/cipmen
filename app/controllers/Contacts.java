@@ -6,6 +6,8 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.contacts;
 
+import javax.transaction.Transactional;
+
 /**
  * Created by brabo on 3/2/16.
  */
@@ -14,6 +16,7 @@ public class Contacts extends Controller {
         return ok(contacts.render());
     }
 
+    @Transactional
     public Result create() {
         Form<Contact> form = Form.form(Contact.class).bindFromRequest();
         if (form.hasErrors()) {

@@ -1,0 +1,116 @@
+
+@main("SAFO"){
+    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header6.jpg") ) ;" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.25 ;"></span>
+        <div class="container">
+            <div class="inner">
+                <div class="title">
+                    <h2 class="text-light"><strong>SAFO</strong></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container space-bottom-2x">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 space-bottom-2x">
+                <nav class="side-nav">
+                    <ul role="tablist">
+                        <li class="active"><a href="#environnement" role="tab" data-toggle="tab">Présentation</a></li>
+                        <li><a href="#energie" role="tab" data-toggle="tab">Postuler</a></li>
+                    </ul>
+                </nav>
+            </div>
+            @if(flash.containsKey("postuleerror")) {
+                @flash.get("postuleerror")
+            }
+            @if(flash.containsKey("postulesuccess")) {
+                @flash.get("postulesuccess")
+            }
+            <div class="col-md-9 col-sm-8">
+                <div class="tab-content transparent space-bottom-2x">
+                    <div role="tabpanel" class="tab-pane transition fade scale  in active" id="environnement">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#ac02">
+                                    Appel à candidature pour sélection d’exploitants d’infrastructures d’énergies renouvelables dans la région de Maradi
+                                </a>
+                            </div>
+                            <div id="ac02" class="panel-collapse collapse in" role="tabpanel">
+                                <div class="panel-body">
+                                    <p>
+                                        Le Centre Incubateur des Petites et Moyennes Entreprise  au Niger (CIPMEN) a reçu du Service de Coopération et d’Action Culturelle de l’Ambassade de France via le Fonds d’Appui aux Sociétés Civiles du Sud (FASCS), un appui pour mettre en œuvre le projet pilote SAGAM-SOL.
+                                    </p>
+                                    <p>
+                                        En partenariat avec le projet PASE-SAFO, GIMAFOR, Tech-Innov, CIPMEN assure la coordination de la mise en œuvre de SAGAM-SOL. C’est un projet pilote qui a pour objectif de contribuer à la pérennisation des infrastructures énergétiques déployés dans la région de Maradi à travers le développement d’un réseau d’entrepreneurs locaux en charge de l’exploitation.
+                                    </p>
+                                    <p>
+                                        Le présent appel à candidature est lancé pour présélectionner 20 entrepreneurs ou aspirants entrepreneurs basés dans la région de Maradi. Ils seront formés techniquement sur l’installation, l’efficacité énergétique et la maintenance des infrastructures d’énergies renouvelables. Ils seront également formés dans la gestion d’entreprise.  Les 3 meilleurs entrepreneurs bénéficieront d’une année d’assistance par le CIPMEN pour rendre viable et développer leurs entreprises.
+                                    </p>
+                                    <p>
+                                        Le Centre Incubateur des Petites et Moyennes Entreprise  au Niger (CIPMEN) est une association à but non lucratif née d’un partenariat public-privé pour promouvoir l’entreprenariat innovant.
+                                    </p>
+
+                                    <p>
+                                        Il accompagne non seulement des start-ups des secteurs TIC, énergies renouvelables, environnement et l’agro-business, en mode résidentiel et virtuel (incubation) mais aussi des porteurs de projet (en pré-incubation).
+                                    </p>
+                                    <p>
+                                        Le formulaire de candidature est téléchargeable sur le site web du CIPMEN : www.cipmen.org. Ou Physiquement à :
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Maradi au niveau du bureau de coordination du projet PASE-Safo (Face Garage Loukman, à côté du marché ORIBA)
+                                        </li>
+                                        <li>
+                                            Niamey au siège du CIPMEN sis au quartier plateau, voie pavée en face de la station Sikièye
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Les candidatures sont à  déposer au plus tard le 10 Mai  2016  au bureau de coordination du projet PASE-Safo  à Maradi ou par email à contact@@cipmen.org.
+                                    </p>
+                                    <p>
+                                        Pour tous renseignements complémentaires, contactez nous via : e-mail : contact@@cipmen.org
+                                    </p>
+                                    <p>
+                                        <a href="@routes.Assets.versioned("fichier/candidature-safo.docx")" class="btn btn-primary btn-icon-right">Présentation<i class="icon-download"></i></a>
+                                        <a href="@routes.Assets.versioned("fichier/pme-safo.docx")" class="btn btn-primary btn-icon-right">Formulaire<i class="icon-download"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="energie">
+                        <form method="post" action="/projet/safo">
+                            <div class="form-control">
+                                <input type="text" name="nom" placeholder="Nom" required="required">
+                                <input type="text" name="prenom" placeholder="Prénom" required="required">
+                                <input type="tel" name="telephone" placeholder="Téléphone" required="required">
+                                <input type="email" name="email" placeholder="Email" required="required">
+                                <input type="number" name="age" placeholder="Age" required="required">
+                                <input type="text" name="residence" placeholder="Lieu de résidence" required="required">
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3"  name="diplome" placeholder="Dernier diplôme  obtenu" required="required"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" name="experience" placeholder="Expérience professionnelle" required="required"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3"  name="entrepreneurExistant" placeholder="Entreprise existante (pour les entrepreneurs) Brêve description de l'entreprise"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3"  name="entrepreneurFuture" placeholder="Aspirant entrepreneur (pour les futurs entrepreneurs) Une brêve présentation du projet"></textarea>
+                            </div>
+
+                            <div class="form-control">
+                                <button type="submit" class="btn btn btn-primary">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
