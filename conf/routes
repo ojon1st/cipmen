@@ -31,7 +31,9 @@ GET        /startup                controllers.Startups.reads()
 GET        /startup/:nom           controllers.Startups.read(nom: String)
 
 # Incubateur
-GET        /incubateur             controllers.Incubateurs.reads()
+GET        /presentation             controllers.Incubateurs.presentation()
+GET        /offre                    controllers.Incubateurs.offre()
+GET        /team                     controllers.Incubateurs.team()
 
 # Mediatheque
 GET        /mediatheques           controllers.Mediatheques.reads()

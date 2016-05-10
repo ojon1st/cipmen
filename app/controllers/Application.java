@@ -10,8 +10,6 @@ import views.html.connexion;
 import views.html.index;
 import views.html.inscription;
 
-import javax.inject.Inject;
-
 
 public class Application extends Controller {
 

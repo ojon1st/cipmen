@@ -1,0 +1,138 @@
+@main("Présentation"){
+
+    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header-stratetic.jpg") ) ;" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.25 ;"></span>
+        <div class="container">
+            <div class="inner">
+                <div class="title">
+                    <h2 class="text-light"><strong>Présentation</strong></h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container space-bottom-2x">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-4 space-bottom-2x">
+                <nav class="side-nav dark-skin">
+                    <ul role="tablist">
+                        <li class="active"><a href="#presentation" role="tab" data-toggle="tab">Incubation</a></li>
+                        <li><a href="#produits" role="tab" data-toggle="tab">Pré incubation</a></li>
+                        <li><a href="#carte" role="tab" data-toggle="tab">Prestation à la carte</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-md-9 col-sm-8">
+                <div class="tab-content transparent space-bottom-2x">
+                    <div role="tabpanel" class="tab-pane transition fade scale in active" id="presentation">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#ac02">
+                                        Elle concerne les entreprises existantes et comporte deux (2) variantes :
+                                    </a>
+                                </div>
+                                <div id="ac02" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <p>
+                                            <strong>- Incubation résidentielle : </strong> elle concerne les entreprises qui sont hébergées dans les locaux du CIPMEN
+                                        </p>
+                                        <p>
+                                            <strong>- Incubation virtuelle : </strong> elle concerne les entreprises qui se trouvent dans leur propres locaux en bénéficiant des services de l’incubateur et éventuellement des infrastructures partagées (salles de réunion, espace café, business lounge, etc.). 
+                                        </p>
+                                        <p>
+                                            Durée : 3 ans 
+                                        </p>
+                                        <p>
+                                            Prestations :
+                                        </p>
+                                        <ul>
+                                            <li>Business development (développement commercial)</li>
+                                            <li>Communication et marketing </li>
+                                            <li>Assistance comptable </li>
+                                            <li>Structuration et Organisation</li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="produits">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                       Pré incubation
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Elle concerne les porteurs de projets et permet de les soutenir pour développer et valider l’idée d’entreprise, concevoir et tester un prototype et élaborer un plan d'affaire bancable. 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="carte">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                        Prestation à la carte dans le domaine de l'entrepreneuriat :
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>gestion de projets </li>
+                                            <li>consulting</li>
+                                            <li>Evènementiel (concours, networking, conférences,...)</li>
+                                            <li>Formations </li>
+                                            <li>Co-working space</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="container" data-loop="true" data-interval="4000">
+        <h2 class="block-title text-center">Témoignages</h2>
+        <div class="testimonials-carousel" data-loop="true">
+            <div class="inner">
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/01.jpg")" alt="Jessie Pinkman">
+                    </div>
+                    <h3 class="testimonial-author-name">Souleymane Drave</h3>
+                    <p>Tous les jours un petit pas pour l'entrepreneur, mais un grand pas pour le développement de l'Afrique. Merci CIPMEN.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/02.jpg")" alt="Lara Goodwill">
+                    </div>
+                    <h3 class="testimonial-author-name">Fatou Guirassy</h3>
+                    <p>Belle expérience, belle équipe Longue vie au CIPMEN.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/03.jpg")" alt="Mike Johnson">
+                    </div>
+                    <h3 class="testimonial-author-name">Paul Swider</h3>
+                    <p>Thanks for the welcome to your land of opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+}
