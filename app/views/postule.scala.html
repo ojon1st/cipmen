@@ -21,6 +21,7 @@
                         <li class="active"><a href="#energie" role="tab" data-toggle="tab">Énergie</a></li>
                         <li><a href="#environnement" role="tab" data-toggle="tab">Environnement</a></li>
                         <li><a href="#tic" role="tab" data-toggle="tab">TIC</a></li>
+                        <li><a href="#agrobusiness" role="tab" data-toggle="tab">Agrobusiness</a></li>
                     </ul>
                 </nav>
             </div>
@@ -122,6 +123,47 @@
                                 <input type="email" name="email" placeholder="Email">
                                 <input type="text" name="adresse" placeholder="Adresse">
                                 <input type="hidden" name="type" value="tic">
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" placeholder="Description de votre projet"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" placeholder="Problèmes constatés ou opportunités"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" placeholder="Cientèle cible"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <p style="padding-left: 30px;">Stade de développement</p>
+                                <label class="radio">
+                                    <input type="radio" name="stade" value="Idée"> Idée
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="stade" value="Prototype"> Prototype
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="stade"  value="test sur le marché"> Test sur le marché
+                                </label>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" placeholder="Freins à la réalisation"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <textarea rows="3" placeholder="Vos attentes vis-à-vis du Cipmen"></textarea>
+                            </div>
+                            <div class="form-control">
+                                <button type="submit" class="btn btn-ghost btn-default">Envoyer</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="agrobusiness">
+                        <form method="post" action="postule">
+                            <div class="form-control">
+                                <input type="text" name="nom" placeholder="Nom">
+                                <input type="text" name="prenom" placeholder="Prénom">
+                                <input type="email" name="email" placeholder="Email">
+                                <input type="text" name="adresse" placeholder="Adresse">
+                                <input type="hidden" name="type" value="agrobusiness">
                             </div>
                             <div class="form-control">
                                 <textarea rows="3" placeholder="Description de votre projet"></textarea>
