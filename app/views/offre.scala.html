@@ -1,22 +1,26 @@
-@main("Incubateur"){
+@main("Présentation"){
 
-    <section class="fw-section parallax text-center padding-top-3x padding-bottom-3x" style="background-image : url(@routes.Assets.versioned("img/home/header2.jpg"));" data-stellar-background-ratio="0.65">
-        <span class="overlay" style="opacity: .78;"></span>
-        <div class="container padding-top-3x padding-bottom-3x">
-            <a href="https://www.youtube.com/watch?v=CoDBASGwbCY" class="video-popup-btn light-skin space-top-3x space-bottom">
-                <i class="pe-7s-film"></i>
-            </a>
-            <p class="text-lg text-light space-bottom-2x">Vidéo de présentation du CIPMEN</p>
+    <div class="page-title pt-dark pt-parallax" style="background-image : url(@routes.Assets.versioned("img/home/header15.jpg") ) ;" data-stellar-background-ratio="0.65">
+        <span class="overlay" style="opacity :.25 ;"></span>
+        <div class="container">
+            <div class="inner">
+                <div class="title">
+                    <h2 class="text-light"><strong>Présentation</strong></h2>
+                </div>
+
+            </div>
         </div>
-    </section>
+    </div>
 
-    <div class="container space-bottom-2x  padding-top-3x padding-bottom-3x">
+    <div class="container space-bottom-2x">
         <div class="row">
 
             <div class="col-md-3 col-sm-4 space-bottom-2x">
                 <nav class="side-nav dark-skin">
                     <ul role="tablist">
-                        <li class="active"><a href="#presentation" role="tab" data-toggle="tab">L'incubateur</a></li>
+                        <li class="active"><a href="#presentation" role="tab" data-toggle="tab">Incubation</a></li>
+                        <li><a href="#produits" role="tab" data-toggle="tab">Pré incubation</a></li>
+                        <li><a href="#carte" role="tab" data-toggle="tab">Prestation à la carte</a></li>
                     </ul>
                 </nav>
             </div>
@@ -28,32 +32,127 @@
                             <div class="panel">
                                 <div class="panel-heading">
                                     <a class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#ac02">
-                                        Présentation
+                                        Elle concerne les entreprises existantes et comporte deux (2) variantes :
                                     </a>
                                 </div>
                                 <div id="ac02" class="panel-collapse collapse in" role="tabpanel">
                                     <div class="panel-body">
-                                        <p>Le Centre Incubateur des PME au Niger (CIPMEN) a lancé officiellement ses activités en Avril 2014.</p>
                                         <p>
-                                            Il est né d’un partenariat public - privé dont l’objectif est d’accompagner  les entreprises évoluant dans les secteurs des Technologies de l’Information et de la Communication, des énergies renouvelables, l’environnement et l’agrobusiness ainsi que les porteurs de projets, dans leur phase de création, de développement et de croissance.
+                                            <strong>- Incubation résidentielle : </strong> elle concerne les entreprises qui sont hébergées dans les locaux du CIPMEN
                                         </p>
                                         <p>
-                                            <strong>CIPMEN </strong>Niger offre aux entreprises et aux porteurs de projets l’infrastructure et les prestations nécessaires pour assurer une croissance soutenue et pérenne.
+                                            <strong>- Incubation virtuelle : </strong> elle concerne les entreprises qui se trouvent dans leur propres locaux en bénéficiant des services de l’incubateur et éventuellement des infrastructures partagées (salles de réunion, espace café, business lounge, etc.). 
                                         </p>
                                         <p>
-                                            La vision du <strong>CIPMEN </strong> est de développer un entreprenariat innovant et durable en favorisant la création d’entreprises à forte proposition de valeur et en structurant l’écosystème entrepreneurial au Niger.
+                                            Durée : 3 ans 
                                         </p>
                                         <p>
-                                            Les chiffres clés :
+                                            Prestations :
                                         </p>
+                                        <ul>
+                                            <li>Business development (développement commercial)</li>
+                                            <li>Communication et marketing </li>
+                                            <li>Assistance comptable </li>
+                                            <li>Structuration et Organisation</li>
+                                        </ul>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="produits">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                       Pré incubation
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Elle concerne les porteurs de projets et permet de les soutenir pour développer et valider l’idée d’entreprise, concevoir et tester un prototype et élaborer un plan d'affaire bancable. 
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane transition fade scale" id="carte">
+                        <div class="panel-group" id="accordion3">
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <a class="panel-title" data-toggle="collapse" data-parent="#accordion3" href="#pb01">
+                                        Prestation à la carte dans le domaine de l'entrepreneuriat :
+                                    </a>
+                                </div>
+                                <div id="pb01" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>gestion de projets </li>
+                                            <li>consulting</li>
+                                            <li>Evènementiel (concours, networking, conférences,...)</li>
+                                            <li>Formations </li>
+                                            <li>Co-working space</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
-}
 
+    <section class="container" data-loop="true" data-interval="4000">
+        <h2 class="block-title text-center">Témoignages</h2>
+        <div class="testimonials-carousel" data-loop="true">
+            <div class="inner">
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/01.jpg")" alt="Jessie Pinkman">
+                    </div>
+                    <h3 class="testimonial-author-name">Souleymane Drave</h3>
+                    <p>Tous les jours un petit pas pour l'entrepreneur, mais un grand pas pour le développement de l'Afrique. Merci CIPMEN.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/02.jpg")" alt="Lara Goodwill">
+                    </div>
+                    <h3 class="testimonial-author-name">Fatou Guirassy</h3>
+                    <p>Belle expérience, belle équipe Longue vie au CIPMEN.</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-author-ava">
+                        <img src="@routes.Assets.versioned("img/testimonials/03.jpg")" alt="Mike Johnson">
+                    </div>
+                    <h3 class="testimonial-author-name">Paul Swider</h3>
+                    <p>Thanks for the welcome to your land of opportunities.</p>
+                </div>
+                <div class="testimonial">
+                    <h3 class="testimonial-author-name">Moussa Halilou,  CEO ICON</h3>
+                    <p>ICON est un intégrateur de solutions informatiques.<br> Nous utilisons les TIC pour apporter une valeur ajoutée sur tout le long des chaînes de production et de commercialisation.<br> Nous sommes accompagnés par le CIPMEN depuis 2 ans. Le CIPMEN nous a permis une meilleure structuration de la société, le renforcement des capacités et surtout la possibilité d'apprendre et d'échanger au sein de réseaux de partenaires national et international</p>
+                </div>
+                <div class="testimonial">
+                    <h3 class="testimonial-author-name">Brolote BA, DG Orange Niger </h3>
+                    <p>En 24 mois à peine, le CIPMEN est devenu un acteur incontournable dans la promotion de l'entreprenariat et de l'innovation au Niger.<br> Le CIPMEN forme aussi beaucoup de jeunes dans les TICs, le développement d'application (ex : hackaton 2015), et on commence à avoir un vrai ecosystème du numérique au Niger.<br> Orange est fier de faire partie des pères fondateurs du CIPMEn, et de contribuer par ce biais à l'innovation et à la création de richesse et d'emplois au Niger. <br>Joyeux anniversaire</p>
+                </div>
+                <div class="testimonial">
+                    <h3 class="testimonial-author-name">AKINE ATTA II Ibrahim, Directeur Du développement Durable de la SEEN</h3>
+                    <p>Dans un contexte difficile, sinon hostile, nous pouvons affirmer que le Centre incubateur des PME au Niger (CIPMEN) s'est positionné comme un acteur incontournable, contribuant ainsi par une initiative concrète et innovante au développement socio-économique du Niger.<br> En effet, les missions qui lui sont confiées, répondent à un besoin d'accompagnement des entreprises innovantes par la création d'un environnement favorable pour ces dernières.<br> Depuis son lancement en Avril 2014, beaucoup de progrès ont été accomplis avec peu de moyens.<br> La relation de confiance créée entre les porteurs de projet et CIPMEN, ne peut que favoriser, le développement de l'entreprenariat des jeunes au Niger.</p>
+                </div>
+                <div class="testimonial">
+                    <h3 class="testimonial-author-name">Djibo IBRAHIM,  DG SINERGI SA</h3>
+                    <p>"Pour qu'un enfant grandisse, il faut tout un village." <br>Ce provere africain s'applique aussi bien au CIPMEN qu'à l'entrepreneuriat des jeunes.nr> CIPMEN parce que bien qu'ayant fait ses preuves et démontré sa maturité, il a encore besoin du soutien de tous ses partenaires.<br> Il s'applique aussi à l'Entrepreneuriat des jeunes dont l'essor ne peut se faire qu'avec la contribution de tous.<br> Joyeux anniversaire CIPMEN</p>
+                </div>
+                <div class="testimonial">
+                    <h3 class="testimonial-author-name">Moulaye Abdourahamane, CEO STRATETIC</h3>
+                    <p>STRATETIC est une agence de communication et de production multimédia créé en 2014 et logée au CIPMEN.<br> AU delà du cadre d'accompagnement formet intégrant les formations le CIPMEN offre un environnement propice aux opportunités d'affaires et de réseautage.<br> Nous échangeons et collaborons ainsi avec les partenaires du CIPMEN pour toujours plus d'efficacité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+}
