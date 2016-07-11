@@ -66,7 +66,7 @@ public class Blog {
      */
     public List<Blog> findList() {
         try {
-            return JPA.em().createQuery("select blog From Blog blog").getResultList();
+            return JPA.em().createQuery("select blog From Blog blog order by blog.id desc").getResultList();
         } catch (Exception e) {
             System.out.println(e.toString());
             return null;

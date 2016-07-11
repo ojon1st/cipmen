@@ -46,7 +46,7 @@ public class Mediatheque {
      */
     public List<Mediatheque> findList() {
         try {
-            return JPA.em().createQuery("select mediatheque From Mediatheque mediatheque").getResultList();
+            return JPA.em().createQuery("select mediatheque From Mediatheque mediatheque  order by mediatheque.id desc").getResultList();
         } catch (Exception e) {
             System.out.println(e.toString());
             return null;

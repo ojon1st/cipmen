@@ -66,7 +66,7 @@ public class Evenement {
      */
     public List<Evenement> findList() {
         try {
-            return JPA.em().createQuery("select evenement From Evenement evenement").getResultList();
+            return JPA.em().createQuery("select evenement From Evenement evenement order by evenement.id desc").getResultList();
         } catch (Exception e) {
             System.out.println(e.toString());
             return null;
