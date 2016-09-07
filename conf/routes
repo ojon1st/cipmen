@@ -38,6 +38,9 @@ GET        /team                     controllers.Incubateurs.team()
 # Mediatheque
 GET        /mediatheques           controllers.Mediatheques.reads()
 
+# Candidature
+GET         /candidatures           controllers.Candidatures.read()
+
 # Postule
 GET        /postule                controllers.Postules.reads()
 POST       /postule                controllers.Postules.create()
