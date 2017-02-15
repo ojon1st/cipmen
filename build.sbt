@@ -1,6 +1,6 @@
 name := """cipmen"""
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
@@ -19,3 +19,7 @@ libraryDependencies ++= Seq(
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 PlayKeys.externalizeResources := false
+
+sources in (Compile, doc) := Seq.empty
+
+publishArtifact in (Compile, packageDoc) := false

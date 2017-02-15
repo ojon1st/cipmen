@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="localhost@cipmen">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.6">
+    <database id="1" name="cipmen">
+      <object-id>16650</object-id>
+      <visible>1</visible>
+    </database>
+    <database id="2" name="postgres">
+      <object-id>12669</object-id>
+    </database>
+    <database id="3" name="nubia">
+      <object-id>16394</object-id>
+    </database>
+    <database id="4" name="hydrocarbure-transport">
+      <object-id>16405</object-id>
+    </database>
+    <schema id="5" parent="1" name="public">
+      <object-id>2200</object-id>
+      <visible>1</visible>
+      <introspection-state-number>933</introspection-state-number>
+      <introspection-timestamp>2017-02-15.10:59:59.181</introspection-timestamp>
+    </schema>
+    <schema id="6" parent="1" name="pg_catalog">
+      <object-id>11</object-id>
+    </schema>
+    <schema id="7" parent="1" name="pg_toast">
+      <object-id>99</object-id>
+    </schema>
+    <schema id="8" parent="1" name="pg_temp_1">
+      <object-id>11848</object-id>
+    </schema>
+    <schema id="9" parent="1" name="pg_toast_temp_1">
+      <object-id>11849</object-id>
+    </schema>
+    <schema id="10" parent="1" name="information_schema">
+      <object-id>12381</object-id>
+    </schema>
+    <sequence id="11" parent="5" name="hibernate_sequence">
+      <object-id>16711</object-id>
+      <state-number>933</state-number>
+    </sequence>
+    <table id="12" parent="5" name="blog">
+      <object-id>16659</object-id>
+      <state-number>925</state-number>
+    </table>
+    <table id="13" parent="5" name="evenement">
+      <object-id>16667</object-id>
+      <state-number>926</state-number>
+    </table>
+    <table id="14" parent="5" name="mediatheque">
+      <object-id>16675</object-id>
+      <state-number>927</state-number>
+    </table>
+    <table id="15" parent="5" name="newsletter">
+      <object-id>16683</object-id>
+      <state-number>928</state-number>
+    </table>
+    <table id="16" parent="5" name="postule">
+      <object-id>16691</object-id>
+      <state-number>929</state-number>
+    </table>
+    <table id="17" parent="5" name="projet">
+      <object-id>16699</object-id>
+      <state-number>930</state-number>
+    </table>
+    <table id="18" parent="5" name="utilisateur">
+      <object-id>16651</object-id>
+      <state-number>924</state-number>
+    </table>
+    <column id="19" parent="12" name="id">
+      <state-number>925</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="20" parent="12" name="image_one">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="21" parent="12" name="image_tree">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="22" parent="12" name="image_two">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="23" parent="12" name="lien">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="24" parent="12" name="long_description">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="25" parent="12" name="short_description">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="26" parent="12" name="titre">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="27" parent="12" name="video">
+      <state-number>925</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="28" parent="12" name="blog_pkey">
+      <object-id>16665</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="29" parent="12" name="blog_pkey">
+      <object-id>16666</object-id>
+      <columns>id</columns>
+      <underlying-index>blog_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="30" parent="13" name="id">
+      <state-number>926</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="31" parent="13" name="image_one">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="32" parent="13" name="image_tree">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="33" parent="13" name="image_two">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="34" parent="13" name="lien">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="35" parent="13" name="long_description">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="36" parent="13" name="short_description">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="37" parent="13" name="titre">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="38" parent="13" name="video">
+      <state-number>926</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="39" parent="13" name="evenement_pkey">
+      <object-id>16673</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="40" parent="13" name="evenement_pkey">
+      <object-id>16674</object-id>
+      <columns>id</columns>
+      <underlying-index>evenement_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="41" parent="14" name="id">
+      <state-number>927</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="42" parent="14" name="image">
+      <state-number>927</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="43" parent="14" name="type">
+      <state-number>927</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="44" parent="14" name="video">
+      <state-number>927</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="45" parent="14" name="mediatheque_pkey">
+      <object-id>16681</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="46" parent="14" name="mediatheque_pkey">
+      <object-id>16682</object-id>
+      <columns>id</columns>
+      <underlying-index>mediatheque_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="47" parent="15" name="id">
+      <state-number>928</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="48" parent="15" name="email">
+      <state-number>928</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="49" parent="15" name="nom">
+      <state-number>928</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="50" parent="15" name="newsletter_pkey">
+      <object-id>16689</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="51" parent="15" name="uk_q70enht4j0w97uuvciqghuj8s">
+      <object-id>16709</object-id>
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="52" parent="15" name="newsletter_pkey">
+      <object-id>16690</object-id>
+      <columns>id</columns>
+      <underlying-index>newsletter_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="53" parent="15" name="uk_q70enht4j0w97uuvciqghuj8s">
+      <object-id>16710</object-id>
+      <columns>email</columns>
+      <underlying-index>uk_q70enht4j0w97uuvciqghuj8s</underlying-index>
+    </key>
+    <column id="54" parent="16" name="id">
+      <state-number>929</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="55" parent="16" name="adresse">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="56" parent="16" name="attente">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="57" parent="16" name="clientele">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="58" parent="16" name="descrition">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="59" parent="16" name="email">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="60" parent="16" name="frein">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="61" parent="16" name="nom">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="62" parent="16" name="prenom">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="63" parent="16" name="probleme">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="64" parent="16" name="stade">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="65" parent="16" name="type">
+      <state-number>929</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="66" parent="16" name="postule_pkey">
+      <object-id>16697</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="67" parent="16" name="postule_pkey">
+      <object-id>16698</object-id>
+      <columns>id</columns>
+      <underlying-index>postule_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="68" parent="17" name="id">
+      <state-number>930</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="69" parent="17" name="age">
+      <state-number>930</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="70" parent="17" name="diplome">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="71" parent="17" name="email">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="72" parent="17" name="entrepreneur_existant">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="73" parent="17" name="entrepreneur_future">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="74" parent="17" name="experience">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="75" parent="17" name="fichier">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="76" parent="17" name="nom">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="77" parent="17" name="prenom">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="78" parent="17" name="residence">
+      <state-number>930</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="79" parent="17" name="telephone">
+      <state-number>930</state-number>
+      <data-type>bigint|0</data-type>
+    </column>
+    <index id="80" parent="17" name="projet_pkey">
+      <object-id>16705</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="81" parent="17" name="projet_pkey">
+      <object-id>16706</object-id>
+      <columns>id</columns>
+      <underlying-index>projet_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="82" parent="18" name="id">
+      <state-number>924</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bigint|0</data-type>
+    </column>
+    <column id="83" parent="18" name="email">
+      <state-number>924</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="84" parent="18" name="nom">
+      <state-number>924</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="85" parent="18" name="password">
+      <state-number>924</state-number>
+      <mandatory>1</mandatory>
+      <data-type>bytea|0</data-type>
+    </column>
+    <column id="86" parent="18" name="profil">
+      <state-number>924</state-number>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <index id="87" parent="18" name="utilisateur_pkey">
+      <object-id>16657</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="88" parent="18" name="uk_35ysk0sh9ruwixrld3nc0weut">
+      <object-id>16707</object-id>
+      <columns>email</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="89" parent="18" name="utilisateur_pkey">
+      <object-id>16658</object-id>
+      <columns>id</columns>
+      <underlying-index>utilisateur_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <key id="90" parent="18" name="uk_35ysk0sh9ruwixrld3nc0weut">
+      <object-id>16708</object-id>
+      <columns>email</columns>
+      <underlying-index>uk_35ysk0sh9ruwixrld3nc0weut</underlying-index>
+    </key>
+  </database-model>
+</dataSource>

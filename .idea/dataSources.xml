@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="PostgreSQL - cipmen@149.56.133.224" uuid="22f8faa3-8a08-47e4-9245-56db7efdee88">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://149.56.133.224:5432/cipmen</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="heroku@dckjkfvk040np9" uuid="a4a97217-fb2f-48f3-a8e9-6fae9eb5e3df">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-79-125-118-3.eu-west-1.compute.amazonaws.com:5432/dckjkfvk040np9</jdbc-url>
+      <driver-properties>
+        <property name="sslmode" value="require" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="localhost@cipmen" uuid="b08e75b7-8c88-4671-a955-062b38326522">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/cipmen</jdbc-url>
+    </data-source>
+  </component>
+</project>

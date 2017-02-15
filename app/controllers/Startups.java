@@ -4,9 +4,6 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.*;
 
-/**
- * Created by brabo on 3/2/16.
- */
 public class Startups extends Controller {
 
     public Result reads() {
@@ -32,6 +29,14 @@ public class Startups extends Controller {
                 return ok(novatech.render());
             case "tech-innov" :
                 return ok(techinnov.render());
+            case "sahel-delices" :
+                return ok(sahel_delices.render());
+            case "joboa" :
+                return ok(joboa.render());
+            case "niger-bioplast" :
+                return ok(niger_bioplast.render());
+            case "mtmr" :
+                return ok(mtmr.render());
             default:
                 return redirect("/");
         }
