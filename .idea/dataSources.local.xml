@@ -26,7 +26,7 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <resolve-scope>cipmen:public,postgres</resolve-scope>
+      <resolve-scope>cipmen:postgres,public</resolve-scope>
     </data-source>
   </component>
 </project>

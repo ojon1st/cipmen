@@ -2,3 +2,7 @@ clean
 run
 clean
 cleanFiles
+compile
+run
+clean
+cleanFiles
