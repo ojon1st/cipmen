@@ -39,6 +39,7 @@ GET        /team                     controllers.Incubateurs.team()
 GET        /mediatheques           controllers.Mediatheques.reads()
 
 # Candidature
+GET         /candidatures                       controllers.Candidatures.readPreIncubation()
 GET         /candidatures/incubation           controllers.Candidatures.readIncubation()
 GET         /candidatures/pre-incubation           controllers.Candidatures.readPreIncubation()
 
