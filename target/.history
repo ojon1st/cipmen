@@ -6,3 +6,12 @@ compile
 run
 clean
 cleanFiles
+run
+clean
+clean-files
+clean-all
+cleanFiles
+run
+clean
+clean-files
+cleanFiles

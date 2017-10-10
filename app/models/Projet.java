@@ -5,9 +5,6 @@ import play.db.jpa.JPA;
 import javax.persistence.*;
 import java.util.List;
 
-/**
- * Created by brabo on 4/25/16.
- */
 @Entity
 @Table(name = "projet")
 public class Projet {
