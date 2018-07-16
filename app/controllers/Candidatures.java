@@ -5,7 +5,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.incubation;
 import views.html.pre_incubation;
-import views.html.african_rethink_awards;
+import views.html.nesap;
 
 
 public class Candidatures extends Controller {
@@ -22,7 +22,7 @@ public class Candidatures extends Controller {
     
     @Transactional
     public Result readARA() {
-        return ok(african_rethink_awards.render());
+        return ok(nesap.render());
     }
 
 }
