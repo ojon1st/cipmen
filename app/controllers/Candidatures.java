@@ -21,7 +21,7 @@ public class Candidatures extends Controller {
     }
     
     @Transactional
-    public Result readARA() {
+    public Result readNesap() {
         return ok(nesap.render());
     }
 
