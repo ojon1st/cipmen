@@ -42,7 +42,7 @@ GET        /mediatheques           controllers.Mediatheques.reads()
 GET         /candidatures                       controllers.Candidatures.readPreIncubation()
 GET         /candidatures/incubation           controllers.Candidatures.readIncubation()
 GET         /candidatures/pre-incubation           controllers.Candidatures.readPreIncubation()
-GET         /candidatures/assistant_executif          controllers.Candidatures.readNesap() 
+GET         /candidatures/assistant_communication          controllers.Candidatures.readNesap() 
 
 # Postule
 GET        /postule                controllers.Postules.reads()
